@@ -1,5 +1,5 @@
 # GroupID-Datasetname
-Datasets from: [NAME](link)
+Datasets from: [Spotify Top 200 Charts (2020-2021)](https://www.kaggle.com/sashankpillai/spotify-top-200-charts-20202021)
 
 ## Objective
 
@@ -9,12 +9,13 @@ Datasets from: [NAME](link)
 
 ## About Us
 งานนี้เป็นส่วนของวิชา INT214 Statistics for Information technology <br/> ภาคเรียนที่ 1 ปีการศึกษา 2564 คณะเทคโนโลยีสารสนเทศ มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าธนบุรี
-### Team: nameXXXXXX
-1. ชื่อ นามสกุล     StudentID: 63130500xxx
-2. ชื่อ นามสกุล     StudentID: 63130500xxx
-3. ชื่อ นามสกุล     StudentID: 63130500xxx
-4. ชื่อ นามสกุล     StudentID: 63130500xxx
-5. ชื่อ นามสกุล     StudentID: 63130500xxx
+### Team: name #ทีมกัสชนะ
+1. นางสาวกัญญาพัชร วิทยามานิตย์กุล   StudentID: 63130500003
+2. นายธีรุตม์ ทันการ    StudentID: 63130500062
+3. นางสาวบุรัสกร บุญมา	    StudentID: 63130500074
+
+
+
 
 ### Instructor
 - ATCHARA TRAN-U-RAIKUL
