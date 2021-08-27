@@ -33,7 +33,7 @@ max(subset(survey,select=c(Age)))
 count(subset(survey,Sex == "Male" & Age > 19))
 ```
 
-7.) From survey, the average of pulse that people tall more tham 170 is 73.48352 . 
+7.) From survey, the average of pulse that people tall more than 170 is 73.48352 . 
 ```{R}
 mean(((subset(survey, Height > 170 ))$Pulse),na.rm=TRUE)
 ```
