@@ -30,7 +30,7 @@ The dataset include all the songs that have been on the Top 200 Weekly (Global) 
 - R Studio Desktop
 
 ## Table of Contents
-1. [Exploratory Data Analysis](#)
+1. [Exploratory Data Analysis](https://github.com/sit-2021-int214/001-Spotify-Top/blob/main/spotify_top/explore_data.md)
 2. [Data Visualization](#)
 
 ## Resources
