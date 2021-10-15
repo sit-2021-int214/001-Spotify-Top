@@ -30,10 +30,8 @@ The dataset include all the songs that have been on the Top 200 Weekly (Global) 
 - R Studio Desktop
 
 ## Table of Contents
-
-1. [Define a question](#)
-2. [Exploratory Data Analysis](#)
-3. [Data Visualization](#)
+1. [Exploratory Data Analysis](#)
+2. [Data Visualization](#)
 
 ## Resources
 
