@@ -1,4 +1,4 @@
-# Marvel VS DC IMDB Dataset
+# Spotify Top 200 Charts (2020-2021)
 
 Dataset from : https://www.kaggle.com/sashankpillai/spotify-top-200-charts-20202021
 
