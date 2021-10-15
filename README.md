@@ -1,7 +1,7 @@
-# 024-Marvel VS DC IMDB Dataset
+# 001-Spotify Top 200 Charts (2020-2021)
 Original Datasets from:  [Spotify Top 200 Charts (2020-2021)](https://www.kaggle.com/sashankpillai/spotify-top-200-charts-20202021)
 
-### About's Marvel VS DC IMDB
+### About's Spotify Top 200 Charts (2020-2021)
 This dataset is about Top 200 songs on Spotify in 2020-2021
 
 ### Objects
@@ -9,12 +9,15 @@ This dataset is about Top 200 songs on Spotify in 2020-2021
 E.g. กลุ่มของเราเลือกชุดข้อมูลนี้เพราะต้องการศึกษา.....
 
 สิ่งที่อยากรู้ :
-1. คะแนน IMDB_Scose ค่าสูงสุดของ Marvel และ DC
-2. ปีที่ 2021 มีภาพยนต์ทั้งหมดกี่เรื่อง มีชื่อเรื่องว่าอะไรบ้าง และ ผลรวมเวลาฉายทั้งหมดของปี 2021 มีค่าเท่าไหร่
-3. ประเภทของภาพยนต์ทั้งหมด โดยไม่เอาข้อมูลซ้ำ
-4. ภาพยนต์เรื่องไหนบ้างที่มีเนื้อหาไม่เหมาะสมกับเด็กและเยาวชนที่อายุต่ำกว่า 13 ปี ฝั่ง DC 
-5. ค่ายไหนที่สร้างรายได้ที่ได้จากภาพยนต์ได้มากกว่ากัน
-6. ภาพยนต์เรื่องไหนที่มีเวลาฉายต่ำกว่า 100 นาที ทั้งฝั่งของ Marvel และ DC
+1. 
+2.
+3.
+4.
+5.
+6.
+7.
+8.
+9.
 
 ### Steps
 1. Define a question
