@@ -37,9 +37,9 @@ The dataset include all the songs that have been on the Top 200 Weekly (Global) 
 
 ### Important Files in Repository
 
-- [Exploratory Data Analysis](https://github.com/sit-2021-int214/001-Spotify-Top/blob/main/spotify_top/file_csv)
-- [Original Dataset](https://github.com/sit-2021-int214/001-Spotify-Top/blob/main/spotify_top/file_csv)
-- [Clean Dataset](https://github.com/sit-2021-int214/001-Spotify-Top/blob/main/spotify_top/file_csv)
+- [Exploratory Data Analysis](#)
+- [Original Dataset](https://github.com/sit-2021-int214/001-Spotify-Top/blob/main/spotify_top/file_csv/spotify_dataset_original.csv)
+- [Clean Dataset](#)
 
 ## Reference
 
