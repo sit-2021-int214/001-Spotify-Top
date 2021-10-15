@@ -2,7 +2,7 @@
 Original Datasets from:  [Spotify Top 200 Charts (2020-2021)](https://www.kaggle.com/sashankpillai/spotify-top-200-charts-20202021)
 
 ### About's Spotify Top 200 Charts (2020-2021)
-The dataset include all the songs that have been on the Top 200 Weekly (Global) charts of Spotify in 2020 & 2021. The dataset include the following many features [click here](#)for more.
+The dataset include all the songs that have been on the Top 200 Weekly (Global) charts of Spotify in 2020 & 2021. The dataset include the following many features [click here](./spotify-top/readme.md) for more.
 
 ### Objects
 สิ่งที่ต้องการจะทราบ :
@@ -37,9 +37,9 @@ The dataset include all the songs that have been on the Top 200 Weekly (Global) 
 
 ### Important Files in Repository
 
-- Exploratory Data Analysis
-- Original Dataset
-- Clean Dataset
+- [Exploratory Data Analysis](./spotify-top/file_csv)
+- [Original Dataset](./spotify-top/file_csv)
+- [Clean Dataset](./spotify-top/file_csv)
 
 ## Reference
 
