@@ -1,7 +1,7 @@
-##Dataset
-Spotify Top Chart 2020-2021 [click here](https://www.kaggle.com/sashankpillai/spotify-top-200-charts-20202021)
+### Dataset
+* Spotify Top Chart 2020-2021 [click here](https://www.kaggle.com/sashankpillai/spotify-top-200-charts-20202021)
 
-The dataset include the following features:
+## The dataset include the following features:
 
 * Highest Charting Position: The highest position that the song has been on in the Spotify Top 200 Weekly Global Charts in 2020 & 2021.
 * Number of Times Charted: The number of times that the song has been on in the Spotify Top 200 Weekly Global Charts in 2020 & 2021.
