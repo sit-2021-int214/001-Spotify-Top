@@ -8,14 +8,14 @@ Dataset from : https://www.kaggle.com/sashankpillai/spotify-top-200-charts-20202
 
 # Loading library and dataset
 
-#library
+### library
 ```{R}
 library(readr)
 library(assertive)
 library(stringr)
 library(dplyr)
 ```
-#DataSet
+### DataSet
 ```{R}
 spotify_tops <- read_csv("/Users/burats/Desktop/Itkmutty2/INT214/spotify_dataset.csv")
 View(spotify_tops)
