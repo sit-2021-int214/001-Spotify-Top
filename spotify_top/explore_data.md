@@ -22,14 +22,14 @@ View(spotify_tops)
 ```
 
 ## 1.) เพลงของศิลปินคนไหนขึ้น charts บ่อยที่สุด
-# Code : 
+### Code : 
 ```{R}
   spotify %>% select(Artist,Number.of.Times.Charted) %>% 
   group_by(Artist) %>% 
   summarise(sumOfNumTimesCharted = sum(Number.of.Times.Charted)) %>%
   slice_max(sumOfNumTimesCharted)
 ```
-# Result :
+### Result :
 ```{R}
  Artist        sumOfNumTimesCharted
   <chr>                        <int>
