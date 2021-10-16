@@ -21,12 +21,17 @@ spotify_tops <- read_csv("/Users/burats/Desktop/Itkmutty2/INT214/spotify_dataset
 View(spotify_tops)
 ```
 
-## 1.) 
+## 1.) เพลงของศิลปินคนไหนขึ้น charts บ่อยที่สุด
 # Code : 
 ```{R}
-  
+  spotify %>% select(Artist,Number.of.Times.Charted) %>% 
+  group_by(Artist) %>% 
+  summarise(sumOfNumTimesCharted = sum(Number.of.Times.Charted)) %>%
+  slice_max(sumOfNumTimesCharted)
 ```
 # Result :
 ```{R}
-
+ Artist        sumOfNumTimesCharted
+  <chr>                        <int>
+1 Billie Eilish                  432
 ```
