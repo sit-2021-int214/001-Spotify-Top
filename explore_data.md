@@ -35,59 +35,83 @@ spotify_tops %>% View()
 ```
 # Step 2 : Check types of values
 ```{R}
-is.numeric(spotify_tops$Index)  #TRUE
+is.numeric(spotify_tops$Index)  
+#TRUE
 
-is.numeric(spotify_tops$`Highest Charting Position`)    #TRUE
+is.numeric(spotify_tops$`Highest Charting Position`)    
+#TRUE
 
-is.numeric(spotify_tops$`Number of Times Charted` )    #TRUE
+is.numeric(spotify_tops$`Number of Times Charted` )    
+#TRUE
 
-is_date(spotify_tops$`Week of Highest Charting` )    #FALSE
-
+is_date(spotify_tops$`Week of Highest Charting` )    
+#FALSE
 assert_is_date(spotify_tops$`Week of Highest Charting`)
 #Error: is_date : spotify_tops$`Week of Highest Charting` is not of class 'Date'; it has class 'character'.
-is.character(spotify_tops$`Song Name`)   #TRUE
 
-is.numeric(spotify_tops$Streams) #TRUE
+is.character(spotify_tops$`Song Name`)   
+#TRUE
 
-is.character(spotify_tops$Artist) #TRUE
+is.numeric(spotify_tops$Streams) 
+#TRUE
 
-is.numeric(spotify_tops$`Artist Followers`)#TRUE
+is.character(spotify_tops$Artist) 
+#TRUE
 
-is.character(spotify_tops$`Song ID`)  #TRUE
+is.numeric(spotify_tops$`Artist Followers`)
+#TRUE
 
-is.character(spotify_tops$Genre)  #TRUE
+is.character(spotify_tops$`Song ID`)  
+#TRUE
 
-is_date(spotify_tops$`Release Date`)  #FALSE
+is.character(spotify_tops$Genre)  
+#TRUE
+
+is_date(spotify_tops$`Release Date`)  
+#FALSE
 assert_is_date(spotify_tops$`Release Date`)
 #Error: is_date : spotify_tops$`Release Date` is not of class 'Date'; it has class 'character'.
 
-is_date(spotify_tops$`Weeks Charted`)  #FALSE
+is_date(spotify_tops$`Weeks Charted`)  
+#FALSE
 assert_is_date(spotify_tops$`Weeks Charted`)
 #Error: is_date : spotify_tops$`Weeks Charted` is not of class 'Date'; it has class 'character'.
 
-is.numeric(spotify_tops$Popularity)  #TRUE
+is.numeric(spotify_tops$Popularity)  
+#TRUE
 
-is.numeric(spotify_tops$Danceability)  #TRUE
+is.numeric(spotify_tops$Danceability)  
+#TRUE
 
-is.numeric(spotify_tops$Energy)  #TRUE
+is.numeric(spotify_tops$Energy)  
+#TRUE
 
-is.numeric(spotify_tops$Loudness)  #TRUE
+is.numeric(spotify_tops$Loudness)  
+#TRUE
 
-is.numeric(spotify_tops$Speechiness)  #TRUE
+is.numeric(spotify_tops$Speechiness)  
+#TRUE
 
-is.numeric(spotify_tops$Acousticness)  #TRUE
+is.numeric(spotify_tops$Acousticness)  
+#TRUE
 
-is.numeric(spotify_tops$Liveness)  #TRUE
+is.numeric(spotify_tops$Liveness)  
+#TRUE
 
-is.numeric(spotify_tops$Loudness)  #TRUE
+is.numeric(spotify_tops$Loudness)  
+#TRUE
 
-is.numeric(spotify_tops$Tempo)  #TRUE
+is.numeric(spotify_tops$Tempo)  
+#TRUE
 
-is.numeric(spotify_tops$`Duration (ms)`)  #TRUE
+is.numeric(spotify_tops$`Duration (ms)`)  
+#TRUE
 
-is.numeric(spotify_tops$Valence)  #TRUE
+is.numeric(spotify_tops$Valence)  
+#TRUE
 
-is.character(spotify_tops$Chord)  #TRUE
+is.character(spotify_tops$Chord)  
+#TRUE
 ```
 
 # Step 3 : Changing the types of values
@@ -106,7 +130,7 @@ spotify_tops %>% duplicated() %>% table()  #FALSE
 
 # Step 5 : Explore Data Analysis
 
-## 1.) เพลงของศิลปินคนไหนขึ้น charts บ่อยที่สุด
+## 1.) เพลงของศิลปินคนไหนติด charts บ่อยที่สุด 
 ### Code : 
 ```{R}
   spotify %>% select(Artist,Number.of.Times.Charted) %>% 
@@ -121,7 +145,7 @@ spotify_tops %>% duplicated() %>% table()  #FALSE
 1 Billie Eilish                  432
 ```
 
-## 2.) TOP 3 Highest Stream
+## 2.) เพลง 3 อันดับแรก ที่มีจำนวนการสตรีมสูงสุด 
 ### Code : 
 ```{R}
 spotify %>% select(Song.Name,Artist,Streams) %>%
@@ -134,7 +158,7 @@ spotify %>% select(Song.Name,Artist,Streams) %>%
 2 Bigger Than Life Lil Uzi Vert 9,974,143
 3       Time Flies        Drake 9,904,749
 ```
-## 3.) เพลงที่มีจำนวนครั้งในการขึ้นชาตมากที่สุด
+## 3.) เพลงที่มีจำนวนครั้งในการขึ้นชาตมากที่สุด 
 ### Code : 
 ```{R}
 spotify %>% select(Song.Name,Number.of.Times.Charted) %>%
@@ -145,7 +169,7 @@ spotify %>% select(Song.Name,Number.of.Times.Charted) %>%
   Song.Name Number.of.Times.Charted
 1   Falling                     142      
 ```
-## 4.) ค่าเฉลี่ยของ loudness เพลงที่ติดชาร์ต
+## 4.) ค่าเฉลี่ยของ loudness เพลงที่ charts 
 ### Code : 
 ```{R}
 spotify %>% select(Loudness) %>%
@@ -156,7 +180,7 @@ spotify %>% select(Loudness) %>%
   avgLoundness
 1    -6.348474        
 ```
-## 5.) chord ที่ใช้ในเพลง ที่ได้รับความนิยมมากที่สุด
+## 5.) chord ใด ที่นิยมนำมาใช้ในเพลงที่ติด charts มากที่สุด 
 ### Code : 
 ```{R}
 spotify %>% select(Chord) %>% group_by(Chord) %>%
@@ -180,7 +204,7 @@ spotify %>% select(Chord) %>% group_by(Chord) %>%
 12 "D#/Eb"    40
 13 " "        11        
 ```
-## 6.) เพลงอะไรบ้างที่มี loundness ไม่อยู่ในค่าเฉลี่ย (ค่าเฉลี่ย -60 ถึง 0)
+## 6.) มีเพลงใดบ้างที่ติด charts แต่ มี loundness ไม่อยู่ในค่าเฉลี่ย (ค่าเฉลี่ย -60 ถึง 0)
 ### Code : 
 ```{R}
 spotify %>% select(Loudness) %>% 
@@ -201,3 +225,6 @@ spotify %>% select(Loudness) %>%
 ```{R}
       
 ```
+
+# Summary 
+## summary explore data
