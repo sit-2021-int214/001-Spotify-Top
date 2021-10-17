@@ -2,7 +2,7 @@
 Original Datasets from:  [Spotify Top 200 Charts (2020-2021)](https://www.kaggle.com/sashankpillai/spotify-top-200-charts-20202021)
 
 ### About's Spotify Top 200 Charts (2020-2021)
-The dataset include all the songs that have been on the Top 200 Weekly (Global) charts of Spotify in 2020 & 2021. The dataset include the following many features [click here](https://github.com/sit-2021-int214/001-Spotify-Top/blob/main/spotify_top/readme.md) for more.
+The dataset include all the songs that have been on the Top 200 Weekly (Global) charts of Spotify in 2020 & 2021. The dataset include the following many features [click here](https://github.com/sit-2021-int214/001-Spotify-Top/blob/main/dataset_feature.md) for more.
 
 ### Overview 
 Team choose this dataset because we want to know songs that popular.
@@ -33,7 +33,7 @@ Team choose this dataset because we want to know songs that popular.
 - R Studio Desktop
 
 ## Table of Contents
-1. [Exploratory Data Analysis](https://github.com/sit-2021-int214/001-Spotify-Top/blob/main/spotify_top/explore_data.md)
+1. [Exploratory Data Analysis](https://github.com/sit-2021-int214/001-Spotify-Top/blob/main/explore_data.md)
 2. [Data Visualization](#)
 
 ## Resources
@@ -41,7 +41,7 @@ Team choose this dataset because we want to know songs that popular.
 ### Important Files in Repository
 
 - [Exploratory Data Analysis](#)
-- [Original Dataset](https://github.com/sit-2021-int214/001-Spotify-Top/blob/main/spotify_top/file_csv/spotify_dataset_original.csv)
+- [Original Dataset](https://github.com/sit-2021-int214/001-Spotify-Top/blob/main/spotify_dataset_original.csv)
 - [Clean Dataset](#)
 
 ## Reference
