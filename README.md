@@ -4,6 +4,9 @@ Original Datasets from:  [Spotify Top 200 Charts (2020-2021)](https://www.kaggle
 ### About's Spotify Top 200 Charts (2020-2021)
 The dataset include all the songs that have been on the Top 200 Weekly (Global) charts of Spotify in 2020 & 2021. The dataset include the following many features [click here](https://github.com/sit-2021-int214/001-Spotify-Top/blob/main/spotify_top/readme.md) for more.
 
+### Overview 
+Team choose this dataset because we want to know songs that popular.
+
 ### Objects
 สิ่งที่ต้องการจะทราบ :
 1. 
