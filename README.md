@@ -9,15 +9,12 @@ Team choose this dataset because we want to know songs that popular.
 
 ### Objects
 สิ่งที่ต้องการจะทราบ :
-1. 
-2.
-3.
-4.
-5.
-6.
-7.
-8.
-9.
+1. อยากทราบว่าเพลงของศิลปินคนไหนติด charts บ่อยที่สุด ?
+2. เพลง 3 อันดับแรก ที่มีจำนวนการสตรีมสูงสุด ?
+3. เพลงที่มีจำนวนครั้งในการขึ้นชาตมากที่สุด ?
+4. ค่าเฉลี่ยของ loudness เพลงที่ charts ?
+5. chord ใด ที่นิยมนำมาใช้ในเพลงที่ติด charts มากที่สุด ?
+6. มีเพลงใดบ้างที่ติด charts แต่ มี loundness ไม่อยู่ในค่าเฉลี่ย ?
 
 ### Steps
 1. Define a question
@@ -40,12 +37,12 @@ Team choose this dataset because we want to know songs that popular.
 
 ### Important Files in Repository
 
-- [Exploratory Data Analysis](#)
+- [Exploratory Data Analysis](https://github.com/sit-2021-int214/001-Spotify-Top/blob/main/explore_data.md)
 - [Original Dataset](https://github.com/sit-2021-int214/001-Spotify-Top/blob/main/spotify_dataset_original.csv)
-- [Clean Dataset](#)
+- [Clean Dataset](https://github.com/sit-2021-int214/001-Spotify-Top/blob/main/clean_spotify_dataset.csv)
 
 ## Reference
-
+- [DataRockie](https://datarockie.com/blog/clean-missing-values-in-two-easy-steps-with-r-2/)
 ## About Us
 งานนี้เป็นส่วนของวิชา INT214 Statistics for Information technology <br/> ภาคเรียนที่ 1 ปีการศึกษา 2564 คณะเทคโนโลยีสารสนเทศ มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าธนบุรี
 ### Team name: #ทีมกัสชนะ
