@@ -153,10 +153,11 @@ spotify %>% select(Song.Name,Artist,Streams) %>%
 ```
 ### Result :
 ```{R}
-         Song.Name       Artist   Streams
-1             UGH!          BTS 9,991,177
-2 Bigger Than Life Lil Uzi Vert 9,974,143
-3       Time Flies        Drake 9,904,749
+  Song Name               Artist          Streams
+                          
+1 Beggin'                   Måneskin       48633449
+2 STAY (with Justin Bieber) The Kid LAROI  47248719
+3 good 4 u                  Olivia Rodrigo 40162559
 ```
 ## 3.) เพลงที่มีจำนวนครั้งในการขึ้นชาตมากที่สุด 
 ### Code : 
