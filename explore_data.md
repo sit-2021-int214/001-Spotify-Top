@@ -217,15 +217,5 @@ spotify %>% select(Loudness) %>%
 1    1.509      
 ```
 
-## 7.) 
-### Code : 
-```{R}
-
-```
-### Result :
-```{R}
-      
-```
-
 # Summary 
 ## summary explore data
