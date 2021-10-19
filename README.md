@@ -40,7 +40,7 @@ The dataset include the following many features [click here](https://github.com/
 
 ### Important Files in Repository
 
-- [Exploratory Data Analysis](https://github.com/sit-2021-int214/001-Spotify-Top/blob/main/exploreData.md)
+- [Exploratory Data Analysis](https://github.com/sit-2021-int214/001-Spotify-Top/blob/main/answer_question.md)
 - [Original Dataset](https://github.com/sit-2021-int214/001-Spotify-Top/blob/main/spotify_dataset_original.csv)
 - [Clean Dataset](https://github.com/sit-2021-int214/001-Spotify-Top/blob/main/clean_spotify_dataset.csv)
 
