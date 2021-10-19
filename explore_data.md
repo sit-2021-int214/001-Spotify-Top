@@ -133,9 +133,8 @@ spotify_tops %>% duplicated() %>% table()  #FALSE
 ## 1.) เพลงของศิลปินคนไหนติด charts บ่อยที่สุด 
 ### Code : 
 ```{R}
-  spotify %>% select(Artist,Number.of.Times.Charted) %>% 
-  group_by(Artist) %>% 
-  summarise(sumOfNumTimesCharted = sum(Number.of.Times.Charted)) %>%
+  spotify_tops %>% select(Artist , `Number of Times Charted`) %>% 
+  group_by(Artist) %>% summarise(sumOfNumTimesCharted = sum(`Number of Times Charted`)) %>%
   slice_max(sumOfNumTimesCharted)
 ```
 ### Result :
@@ -148,7 +147,7 @@ spotify_tops %>% duplicated() %>% table()  #FALSE
 ## 2.) เพลง 3 อันดับแรก ที่มีจำนวนการสตรีมสูงสุด 
 ### Code : 
 ```{R}
-spotify %>% select(Song.Name,Artist,Streams) %>%
+spotify_tops %>% select(`Song Name` , Artist , Streams) %>%
   slice_max(Streams,n=3)
 ```
 ### Result :
@@ -162,8 +161,8 @@ spotify %>% select(Song.Name,Artist,Streams) %>%
 ## 3.) เพลงที่มีจำนวนครั้งในการขึ้นชาตมากที่สุด 
 ### Code : 
 ```{R}
-spotify %>% select(Song.Name,Number.of.Times.Charted) %>%
-  slice_max(Number.of.Times.Charted)
+spotify_tops %>% select(`Song Name` , `Number of Times Charted`) %>%
+  slice_max(`Number of Times Charted`)
 ```
 ### Result :
 ```{R}
@@ -173,7 +172,7 @@ spotify %>% select(Song.Name,Number.of.Times.Charted) %>%
 ## 4.) ค่าเฉลี่ยของ loudness เพลงที่ charts 
 ### Code : 
 ```{R}
-spotify %>% select(Loudness) %>%
+spotify_tops %>% select(Loudness) %>%
   summarise(avgLoundness = mean(Loudness,na.rm=TRUE))
 ```
 ### Result :
@@ -184,7 +183,7 @@ spotify %>% select(Loudness) %>%
 ## 5.) chord ใด ที่นิยมนำมาใช้ในเพลงที่ติด charts มากที่สุด 
 ### Code : 
 ```{R}
-spotify %>% select(Chord) %>% group_by(Chord) %>%
+spotify_tops %>% select(Chord) %>% group_by(Chord) %>%
   count(Chord) %>% arrange(desc(n))
 ```
 ### Result :
@@ -208,8 +207,8 @@ spotify %>% select(Chord) %>% group_by(Chord) %>%
 ## 6.) มีเพลงใดบ้างที่ติด charts แต่ มี loundness ไม่อยู่ในค่าเฉลี่ย (ค่าเฉลี่ย -60 ถึง 0)
 ### Code : 
 ```{R}
-spotify %>% select(Loudness) %>% 
-  filter(Loudness<(-60) | Loudness>0)
+spotify_tops %>% select(Loudness) %>% 
+filter(Loudness<(-60) | Loudness>0)
 ```
 ### Result :
 ```{R}
