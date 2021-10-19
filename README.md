@@ -5,8 +5,7 @@ Original Datasets from:  [Spotify Top 200 Charts (2020-2021)](https://www.kaggle
 The dataset include all the songs that have been on the Top 200 Weekly (Global) charts of Spotify in 2020 & 2021. The dataset include the following many features [click here](https://github.com/sit-2021-int214/001-Spotify-Top/blob/main/dataset_feature.md) for more.
 
 ### Overview 
-Team choose this dataset because we want to know songs that popular and chord that most popular use in songs.
-
+กลุ่มของเราเลือก dataset นี้ เพราะว่า พวกเราชอบฟังเพลง และ spotify เป็นแพลตฟอร์มที่คนส่วนใหญ่ฟังกันและมีการจัดอันดับต่าง ๆ ซึ่งจะเป็นการจัดอันดับในแต่ละสัปดาห์ จึงทำให้เราสามารถนำข้อมูลต่าง ๆ มาวิเคราะห์ได้ เช่น เพลงที่ได้รับความนิยมส่วนใหญ่ใช้ chord อะไร
 ### Objects
 สิ่งที่ต้องการจะทราบ :
 1. อยากทราบว่าเพลงของศิลปินคนไหนติด charts บ่อยที่สุด ?
