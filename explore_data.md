@@ -36,8 +36,9 @@ spotify_tops %>% select(`Song Name` , `Number of Times Charted`) %>%
 ```
 ### Result :
 ```{R}
-  Song.Name Number.of.Times.Charted
-1   Falling                     142      
+`Song Name` `Number of Times Charted`
+ 
+1 Falling                           142    
 ```
 ## 4.) ค่าเฉลี่ยของ loudness เพลงที่ charts 
 ### Code : 
@@ -86,7 +87,7 @@ filter(Loudness<(-60) | Loudness>0)
 1    1.509      
 ```
 
-## 7.) 
+## 7.) เพลงใดบ้างที่อยู่ต่ำกว่าค่าเฉลี่ยของ Tempo
 ### Code : 
 ```{R}
 
