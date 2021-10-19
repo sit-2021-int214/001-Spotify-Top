@@ -90,11 +90,24 @@ filter(Loudness<(-60) | Loudness>0)
 ## 7.) เพลงใดบ้างที่อยู่ต่ำกว่าค่าเฉลี่ยของ Tempo
 ### Code : 
 ```{R}
-
+spotify_tops %>% select(`Song Name`,Tempo) %>%
+  filter(Tempo < mean(Tempo,na.rm=TRUE)) %>% arrange(Tempo)
 ```
 ### Result :
 ```{R}
-      
+`Song Name`                       Tempo
+   <chr>                             <dbl>
+ 1 Carol of the Bells                 46.7
+ 2 Rover (feat. DTG)                  62.9
+ 3 Changes                            64.1
+ 4 changes                            64.9
+ 5 Alone Again                        65.4
+ 6 a m a r i                          66.0
+ 7 I Want It                          66.4
+ 8 Let Me Love You Like A Woman       66.9
+ 9 The Take (feat. Chris Brown)       67.0
+10 Rockin' Around The Christmas Tree  67.2
+# … with 776 more rows   
 ```
 
 # Summary 
