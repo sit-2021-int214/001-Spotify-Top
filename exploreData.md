@@ -2,7 +2,7 @@
 เนื่องจากสมาชิกภายในกลุ่มชอบฟังเพลงบน spotify จึงเกิดคำถามภายในกลุ่มว่า spotify จัดอันดับเพลงที่จะเอาขึ้น charts อย่างไร มีอะไรที่เป็นองค์ประกอบในการจัดอันดับบ้าง และเพลงที่ได้รับความนิยมส่วนใหญ่จะเป็นเพลงแนวไหน อย่างไร
 
 ## Step 2). Search datasets from Kaggle
-พวกเราจึงได้หาข้อมูลที่เกี่ยวกับการเก็บข้อมูลต่าง ๆ ในการขึ้น charts ของ spotify จาก [kaggle](https://www.kaggle.com/sashankpillai/spotify-top-200-charts-20202021)
+พวกเราจึงได้หาข้อมูลที่เกี่ยวกับการเก็บข้อมูลต่าง ๆ ในการขึ้น charts ของ spotify จาก [kaggle](https://www.kaggle.com/sashankpillai/spotify-top-200-charts-20202021)<br>
 และใช้คำสั่ง `spotify <- read.csv("D:/grade2_1/INT214/spotify_dataset.csv")` เพื่อ import dataset
 
 ## Data Exploration
