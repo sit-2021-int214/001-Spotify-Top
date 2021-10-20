@@ -32,7 +32,7 @@ The dataset include the following many features [click here](https://github.com/
 
 ## Table of Contents
 1. [Explore Data](https://github.com/sit-2021-int214/001-Spotify-Top/blob/main/exploreData.md)
-2. [Data Cleaning](https://github.com/sit-2021-int214/001-Spotify-Top/blob/main/data_cleaning_.md)
+2. [Data Cleaning](https://github.com/sit-2021-int214/001-Spotify-Top/blob/main/data_cleaning.md)
 3. [Data Analysis (Answer all define question)](https://github.com/sit-2021-int214/001-Spotify-Top/blob/main/answer_question.md)
 4. [Data Visualization](#)
 
