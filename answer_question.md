@@ -40,7 +40,7 @@ spotify_tops %>% select(`Song Name` , `Number of Times Charted`) %>%
  
 1 Falling                           142    
 ```
-## 4.) ค่าเฉลี่ยของ loudness เพลงที่ charts 
+## 4.) ค่าเฉลี่ยของ loudness เพลงที่ติด charts 
 ### Code : 
 ```{R}
 spotify_tops %>% select(Loudness) %>%
@@ -78,13 +78,14 @@ spotify_tops %>% select(Chord) %>% group_by(Chord) %>%
 ## 6.) มีเพลงใดบ้างที่ติด charts แต่ มี loundness ไม่อยู่ในค่าเฉลี่ย (ค่าเฉลี่ย -60 ถึง 0)
 ### Code : 
 ```{R}
-spotify_tops %>% select(Loudness) %>% 
-filter(Loudness<(-60) | Loudness>0)
+spotify_tops %>% select(`Song Name`,Loudness) %>% 
+  filter(Loudness < (-60) | Loudness>0)
 ```
 ### Result :
 ```{R}
-  Loudness
-1    1.509      
+  `Song Name`        Loudness
+  <chr>                 <dbl>
+1 Na Raba Toma Tapão     1.51     
 ```
 
 ## 7.) เพลงใดบ้างที่อยู่ต่ำกว่าค่าเฉลี่ยของ Tempo
@@ -126,10 +127,10 @@ spotify_tops %>% select(`Song Name`,Tempo) %>%
 | No. | ชื่อเพลง                       | จำนวนครั้งที่ขึ้น Charts  | 
 |:---:|----------------------------- |---------------------|
 |  1  | Beggin                       | 142                 | 
-4. ค่าเฉลี่ยของ loudness เพลงที่ charts ?
-5. chord ใด ที่นิยมนำมาใช้ในเพลงที่ติด charts มากที่สุด ?
-6. มีเพลงใดบ้างที่ติด charts แต่ มี loundness ไม่อยู่ในค่าเฉลี่ย ?
-7. เพลงใดบ้างที่อยู่ต่ำกว่าค่าเฉลี่ยของ Tempo
+4. ค่าเฉลี่ยของ loudness เพลงที่ติด charts คือ -6.348474 
+5. chord ที่นิยมนำมาใช้ในเพลงที่ติด charts มากที่สุด คือ คอร์ด C# และ คอร์ด Db ซึ่งจำนวนทั้งหมด 214 เพลงที่ใช้คอร์ดนี้
+6. เพลงที่ติด charts แต่มี loundness ไม่อยู่ในค่าเฉลี่ย(-60 ถึง 0) คือ เพลง Na Raba Toma Tapão 
+7. เพลงที่อยู่ต่ำกว่าค่าเฉลี่ยของ Tempo มีทั้งหมด 776 เพลง ซึ่งเพลงที่มี Tempo ต่ำกว่าค่าเฉลี่ยมากสุดคือเพลง Carol of the Bells  ที่มี Tempo อยู่ที่ 46.7
 
 
 ## summary explore data
