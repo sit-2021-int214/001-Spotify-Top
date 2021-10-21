@@ -9,9 +9,12 @@ Dataset from : https://www.kaggle.com/sashankpillai/spotify-top-200-charts-20202
 4. ค่าเฉลี่ยของ loudness เพลงที่ charts ?
 5. chord ใด ที่นิยมนำมาใช้ในเพลงที่ติด charts มากที่สุด ?
 6. มีเพลงใดบ้างที่ติด charts แต่ มี loundness ไม่อยู่ในค่าเฉลี่ย ?
+7. เพลงใดบ้างที่อยู่ต่ำกว่าค่าเฉลี่ยของ Tempo
  
-
 # Step 0 : Loading library and import dataset
+
+ในขั้นตอนแรกนี้ เราจะต้อง import library ที่เราต้องการจะใช้ในการ clean data และวิเคราะห์ข้อมูลก่อน โดยใช้คำสั่ง `library()` <br>
+หลังจากนั้นก็ทำการ import dataset ของเราเข้ามา โดยใข้คำสั่ง `read_csv()`
 
 ### library
 ```{R}
@@ -26,6 +29,7 @@ spotify_tops <- read_csv("https://raw.githubusercontent.com/sit-2021-int214/001-
 View(spotify_tops)
 ```
 # Step 1 : check missing values
+
 ```{R}
 glimpse(spotify_tops)
 summary(spotify_tops)
