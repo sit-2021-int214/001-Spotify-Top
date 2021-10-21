@@ -2,17 +2,16 @@
 
 Dataset from : https://www.kaggle.com/sashankpillai/spotify-top-200-charts-20202021
 
-# Defind a question
-1. อยากทราบว่าเพลงของศิลปินคนไหนติด charts บ่อยที่สุด ?
-2. เพลง 3 อันดับแรก ที่มีจำนวนการสตรีมสูงสุด ?
-3. เพลงที่มีจำนวนครั้งในการขึ้น charts มากที่สุด ?
-4. ค่าเฉลี่ยของ loudness เพลงที่ charts ?
-5. chord ใด ที่นิยมนำมาใช้ในเพลงที่ติด charts มากที่สุด ?
-6. มีเพลงใดบ้างที่ติด charts แต่ มี loundness ไม่อยู่ในค่าเฉลี่ย ?
-7. เพลงใดบ้างที่อยู่ต่ำกว่าค่าเฉลี่ยของ Tempo
+รวม code ที่พวกเราใช้ clean data : [R file](https://github.com/sit-2021-int214/001-Spotify-Top/blob/main/clean_data.R) 
+## Step 0 : Loading library
 
-[R file](https://github.com/sit-2021-int214/001-Spotify-Top/blob/main/clean_data.R) : รวม code ที่พวกเราใช้ clean data
- 
+ในขั้นตอนแรกนี้ เราจะต้อง import library ที่เราต้องการจะใช้ในการ clean data และวิเคราะห์ข้อมูลก่อน โดยใช้คำสั่ง `library()` 
+```{R}
+library(readr)
+library(assertive)
+library(stringr)
+library(dplyr)
+```
 # Step 1 : check missing values
 
 ```{R}
@@ -163,4 +162,4 @@ spotify_tops %>% duplicated() %>% table()  #FALSE
 ```
 ทำการตรวจสอบว่า dataset ที่เรานำมานั้น มีข้อมูลที่ซ้ำกันหรือไม่ จากด้านบน dataset ชุดนี้ไม่มีข้อมูลที่ซ้ำกัน
 
-Cleaning Data เสร็จแล้ว เราไปทำ [Data Analysis](https://github.com/sit-2021-int214/001-Spotify-Top/blob/main/answer_question.md) กันต่อเลย
+หลังจากที่เรา Cleaning Data เสร็จแล้ว เราไปทำ [Data Analysis](https://github.com/sit-2021-int214/001-Spotify-Top/blob/main/answer_question.md) เพื่อหาคำตอบที่เราสงสัยกันต่อเลย
