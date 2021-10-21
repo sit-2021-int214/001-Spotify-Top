@@ -163,4 +163,4 @@ spotify_tops %>% duplicated() %>% table()  #FALSE
 ```
 ทำการตรวจสอบว่า dataset ที่เรานำมานั้น มีข้อมูลที่ซ้ำกันหรือไม่ จากด้านบน dataset ชุดนี้ไม่มีข้อมูลที่ซ้ำกัน
 
-## Cleaning Data เสร็จแล้ว เราไปทำ [Data Analysis](https://github.com/sit-2021-int214/001-Spotify-Top/blob/main/answer_question.md) กันต่อเลย
+Cleaning Data เสร็จแล้ว เราไปทำ [Data Analysis](https://github.com/sit-2021-int214/001-Spotify-Top/blob/main/answer_question.md) กันต่อเลย
