@@ -71,8 +71,8 @@ spotify_tops %>% select(Loudness) %>%
 ## 5.) chord ใด ที่นิยมนำมาใช้ในเพลงที่ติด charts มากที่สุด 
 ### Code : 
 ```{R}
-spotify_tops %>% select(Chord) %>% group_by(Chord) %>%
-  count(Chord) %>% arrange(desc(n))
+spotify_tops %>% select(Chord) %>% group_by(Chord) %>% 
+  count(Chord) %>%filter(Chord != '') %>% arrange(desc(n))
 ```
 ### Result :
 ```{R}
@@ -89,8 +89,7 @@ spotify_tops %>% select(Chord) %>% group_by(Chord) %>%
  9 "F#/Gb"   121
 10 "A"       118
 11 "E"       112
-12 "D#/Eb"    40
-13 " "        11        
+12 "D#/Eb"    40    
 ```
 จากการทำ Data Analysis สามารถสรุปได้ว่า chord ที่นิยมนำมาใช้ในเพลงที่ติด charts มากที่สุด คือ คอร์ด C# และ คอร์ด Db ซึ่งมีจำนวนทั้งหมด 214 เพลงที่ใช้คอร์ดนี้
 
