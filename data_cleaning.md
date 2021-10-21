@@ -11,7 +11,7 @@ Dataset from : https://www.kaggle.com/sashankpillai/spotify-top-200-charts-20202
 6. มีเพลงใดบ้างที่ติด charts แต่ มี loundness ไม่อยู่ในค่าเฉลี่ย ?
 7. เพลงใดบ้างที่อยู่ต่ำกว่าค่าเฉลี่ยของ Tempo
 
-[R file](https://github.com/sit-2021-int214/001-Spotify-Top/blob/main/clean_data.R)
+[R file](https://github.com/sit-2021-int214/001-Spotify-Top/blob/main/clean_data.R) : รวม code ที่พวกเราใช้ clean data
  
 # Step 0 : Loading library and import dataset
 
