@@ -16,11 +16,7 @@ Dataset from : https://www.kaggle.com/sashankpillai/spotify-top-200-charts-20202
 # Step 1 : check missing values
 
 ```{R}
-glimpse(spotify_tops)
 summary(spotify_tops)
-
-spotify_tops %>% head()
-spotify_tops %>% View()
 ```
 
 Result for summary(spotify_tops) will show that column have Missing Value
@@ -166,3 +162,5 @@ summary(spotify_tops$`Release Date`)
 spotify_tops %>% duplicated() %>% table()  #FALSE
 ```
 ทำการตรวจสอบว่า dataset ที่เรานำมานั้น มีข้อมูลที่ซ้ำกันหรือไม่ จากด้านบน dataset ชุดนี้ไม่มีข้อมูลที่ซ้ำกัน
+
+## Cleaning Data เสร็จแล้ว เราไปทำ [Data Analysis](https://github.com/sit-2021-int214/001-Spotify-Top/blob/main/answer_question.md) กันต่อเลย
