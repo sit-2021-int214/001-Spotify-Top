@@ -5,7 +5,7 @@ Dataset from : https://www.kaggle.com/sashankpillai/spotify-top-200-charts-20202
 # Defind a question
 1. อยากทราบว่าเพลงของศิลปินคนไหนติด charts บ่อยที่สุด ?
 2. เพลง 3 อันดับแรก ที่มีจำนวนการสตรีมสูงสุด ?
-3. เพลงที่มีจำนวนครั้งในการขึ้นชาตมากที่สุด ?
+3. เพลงที่มีจำนวนครั้งในการขึ้น charts มากที่สุด ?
 4. ค่าเฉลี่ยของ loudness เพลงที่ charts ?
 5. chord ใด ที่นิยมนำมาใช้ในเพลงที่ติด charts มากที่สุด ?
 6. มีเพลงใดบ้างที่ติด charts แต่ มี loundness ไม่อยู่ในค่าเฉลี่ย ?
@@ -117,7 +117,7 @@ is.numeric(spotify_tops$Valence)
 is.character(spotify_tops$Chord)  
 #TRUE
 ```
-
+จาก code ด้านบนเราได้ทำการตรวจสอบประเภทของข้อมูล ซึ่งตัวแปรที่มีชื่อว่า Week of Highest Charting, Release Date และ Weeks Charted มีประเภทข้อมูลเป็น character 
 # Step 3 : Changing the types of values
 ```{R}
 spotify_tops$Genre <- as.factor(spotify_tops$Genre)
@@ -131,3 +131,4 @@ summary(spotify_tops$`Release Date`)
 ```{R}
 spotify_tops %>% duplicated() %>% table()  #FALSE
 ```
+ทำการตรวจสอบว่า dataset ที่เรานำมานั้น มีข้อมูลที่ซ้ำกันหรือไม่ จากด้านบน dataset ชุดนี้ไม่มีข้อมูลที่ซ้ำกัน
