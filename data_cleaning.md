@@ -16,7 +16,7 @@ Dataset from : https://www.kaggle.com/sashankpillai/spotify-top-200-charts-20202
 # Step 0 : Loading library and import dataset
 
 ในขั้นตอนแรกนี้ เราจะต้อง import library ที่เราต้องการจะใช้ในการ clean data และวิเคราะห์ข้อมูลก่อน โดยใช้คำสั่ง `library()` <br>
-หลังจากนั้นก็ทำการ import dataset ของเราเข้ามา โดยใข้คำสั่ง `read_csv()`
+หลังจากนั้นก็ทำการ import dataset ของเราเข้ามา โดยใช้คำสั่ง `read_csv()`
 
 ### library
 ```{R}
