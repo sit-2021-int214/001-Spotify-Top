@@ -3,12 +3,12 @@
 
 ## Step 2). Search datasets from Kaggle
 พวกเราจึงได้หาข้อมูลที่เกี่ยวกับการเก็บข้อมูลต่าง ๆ ในการขึ้น charts ของ spotify จาก [kaggle](https://www.kaggle.com/sashankpillai/spotify-top-200-charts-20202021)<br>
-และใช้คำสั่ง `spotify <- read.csv("")` เพื่อ import dataset
+และใช้คำสั่ง `read.csv("")` เพื่อ import dataset
 
 ## Data Exploration
 ข้อมูลชุดนี้เป็นข้อมูลเพลงต่าง ๆ ที่ได้ขึ้น charts ของ spotify ซึ่งจัดอันดับ 200 อันดับแรกของแต่ละสัปดาห์ในช่วงปี 2020 ถึง 2021 <br>
-dataset นี้ ประกอบไปด้วยเพลงทั้งหมด 1,556 เพลง และมีตัวแปร 23 ตัว โดยใช้คำสั่ง `glimpse(spotify)` หรือจะดูที่หน้า environment เพื่อใช้ในการตรวจสอบ<br>
-ซึ่งแต่ละตัวแปรมีความหมาย ดังนี้
+dataset นี้ ประกอบไปด้วยเพลงทั้งหมด 1,556 เพลง และมีตัวแปร 23 ตัว โดยใช้คำสั่ง `glimpse()` หรือจะดูที่หน้า environment<br>
+เพื่อใช้ในการตรวจสอบ ซึ่งแต่ละตัวแปรมีความหมาย ดังนี้
 
 * Highest Charting Position : อันดับสูงสุดในการติด charts ของเพลงนั้น ๆ 
 * Number of Times Charted : จำนวนครั้งที่เพลงนั้นติด charts
