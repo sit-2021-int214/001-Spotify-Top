@@ -2,8 +2,7 @@
 Original Datasets from:  [Spotify Top 200 Charts (2020-2021)](https://www.kaggle.com/sashankpillai/spotify-top-200-charts-20202021)
 
 ### About's Spotify Top 200 Charts (2020-2021)
-The dataset include all the songs that have been on the Top 200 Weekly (Global) charts of Spotify in 2020 & 2021.
-The dataset include the following many features [click here](https://github.com/sit-2021-int214/001-Spotify-Top/blob/main/dataset_feature.md) for more.
+ข้อมูลชุดนี้จะรวมเพลงทั้งหมดที่อยู่ใน charts 200 อันดับแรกในแต่ละสัปดาห์ทั่วโลก ของ spotify ในปี 2020 และ 2021 
 
 ### Overview 
 กลุ่มของเราเลือก dataset นี้ เพราะว่า พวกเราชอบฟังเพลงและ spotify เป็นแพลตฟอร์มที่คนส่วนใหญ่ฟังกันและมีการจัดอันดับต่าง ๆ 
@@ -16,6 +15,7 @@ The dataset include the following many features [click here](https://github.com/
 4. ค่าเฉลี่ยของ loudness เพลงที่ charts ?
 5. chord ใด ที่นิยมนำมาใช้ในเพลงที่ติด charts มากที่สุด ?
 6. มีเพลงใดบ้างที่ติด charts แต่ มี loundness ไม่อยู่ในค่าเฉลี่ย ?
+7. เพลงใดบ้างที่อยู่ต่ำกว่าค่าเฉลี่ยของ Tempo ?
 
 ### Steps
 1. Define a question
