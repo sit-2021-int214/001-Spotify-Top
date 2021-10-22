@@ -108,3 +108,6 @@ Result:
 1  South Technology Cisco TelePresence System EX90 Videoconferencing Unit 22638.48
 ```
 Explain : แสดงภูมิภาคิที่มียอดซื้อมากกว่า 10000 แสดงประเภทสินค้าและชื่อของสินค้าเพื่อวิเคราะห์ภูมิภาคที่ซื้อเพื่อวิเคราะห์ประเภทของสินค้า
+
+
+[Visualization with GGplot2](https://github.com/sit-2021-int214/001-Spotify-Top/blob/287d17e8bdcda1f73fa373b8e3f4eb4f7dd36b92/assignment/HW04_63130500062/Visualization%20with%20GGplot2.md)
