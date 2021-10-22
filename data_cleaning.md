@@ -3,15 +3,7 @@
 Dataset from : https://www.kaggle.com/sashankpillai/spotify-top-200-charts-20202021
 
 รวม code ที่พวกเราใช้ clean data : [R file](https://github.com/sit-2021-int214/001-Spotify-Top/blob/main/clean_data.R) 
-## Step 0 : Loading library
 
-ในขั้นตอนแรกนี้ เราจะต้อง import library ที่เราต้องการจะใช้ในการ clean data และวิเคราะห์ข้อมูลก่อน โดยใช้คำสั่ง `library()` 
-```{R}
-library(readr)
-library(assertive)
-library(stringr)
-library(dplyr)
-```
 # Step 1 : check missing values
 
 ```{R}
