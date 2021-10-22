@@ -18,42 +18,59 @@
 ## 2.) เพลง 3 อันดับแรก ที่มีจำนวนการสตรีมสูงสุด 
 ### Code : 
 ```{R}
-spotify_tops %>% select(`Song Name` , Artist , Streams) %>%
+spotify_tops %>% select(`Song Name` , Artist , Streams, Genre) %>%
   slice_max(Streams,n=3)
 ```
 ### Result :
 ```{R}
-  Song Name               Artist          Streams
-                          
-1 Beggin'                   Måneskin       48633449
-2 STAY (with Justin Bieber) The Kid LAROI  47248719
-3 good 4 u                  Olivia Rodrigo 40162559
+ `Song Name`               Artist          Streams Genre                             
+  <chr>                     <chr>             <dbl> <chr>                             
+1 Beggin'                   Måneskin       48633449 ['indie rock italiano', 'italian ~
+2 STAY (with Justin Bieber) The Kid LAROI  47248719 ['australian hip hop']            
+3 good 4 u                  Olivia Rodrigo 40162559 ['pop'] 
 ```
 จากการทำ Data Analysis สามารถสรุปได้ว่า เพลง 3 อันดับแรก ที่มีจำนวนการสตรีมสูงสุด คือ 
 
-| No. | ชื่อเพลง                       | ชื่อศิลปิน           | จำนวนการสตรีม |
-|:---:|----------------------------- |------------------|------------- |
-|  1  | Beggin                       | Måneskin         | 48633449     |
-|  2  | STAY (with Justin Bieber)    | The Kid LAROI    | 47248719     |
-|  3  | good 4 u                     | Olivia Rodrigo   | 40162559     |
+| No. | ชื่อเพลง                       | ชื่อศิลปิน           | จำนวนการสตรีม |ประเภทของเพลง|
+|:---:|----------------------------- |------------------|------------- |---------------|
+|  1  | Beggin                       | Måneskin         | 48633449     |indie rock italiano,italian pop|
+|  2  | STAY (with Justin Bieber)    | The Kid LAROI    | 47248719     |australian hip hop|
+|  3  | good 4 u                     | Olivia Rodrigo   | 40162559     |pop|
 
 ## 3.) เพลงที่มีจำนวนครั้งในการขึ้นชาตมากที่สุด 
 ### Code : 
 ```{R}
-spotify_tops %>% select(`Song Name` , `Number of Times Charted`) %>%
-  slice_max(`Number of Times Charted`)
+spotify_tops %>% select(`Song Name` , `Number of Times Charted`,Genre) %>%
+  slice_max(`Number of Times Charted`,n=3) %>% filter(Genre != '[]')
 ```
 ### Result :
 ```{R}
-`Song Name` `Number of Times Charted`
- 
-1 Falling                           142    
+`Song Name`           `Number of Times Charted` Genre                              
+   <chr>                                     <dbl> <chr>                              
+ 1 Falling                                     142 ['pop', 'post-teen pop']           
+ 2 Circles                                      84 ['dfw rap', 'melodic rap', 'rap']  
+ 3 Blinding Lights                              83 ['canadian contemporary r&b', 'can~
+ 4 Watermelon Sugar                             83 ['pop', 'post-teen pop']           
+ 5 Someone You Loved                            83 ['pop', 'uk pop']                  
+ 6 Dance Monkey                                 83 ['australian pop', 'pop']          
+ 7 Before You Go                                83 ['pop', 'uk pop']                  
+ 8 Believer                                     83 ['modern rock', 'pop', 'rock']     
+ 9 Roses - Imanbek Remix                        83 ['melodic rap', 'pop rap', 'rap', ~
+10 lovely (with Khalid)                         83 ['electropop', 'pop']              
+11 Señorita                                     83 ['canadian pop', 'dance pop', 'pop~
+12 Perfect                                      83 ['pop', 'uk pop']                  
+13 Memories                                     83 ['pop', 'pop rock']                
+14 goosebumps                                   83 ['rap', 'slap house']              
+15 Shallow                                      83 ['dance pop', 'pop', 'post-teen po~
+16 Lucid Dreams                                 83 ['chicago rap', 'melodic rap']     
+17 Adore You                                    83 ['pop', 'post-teen pop']   
 ```
 จากการทำ Data Analysis สามารถสรุปได้ว่า เพลงที่มีจำนวนครั้งในการขึ้นชาตมากที่สุด คือ
 
-| No. | ชื่อเพลง                       | จำนวนครั้งที่ขึ้น Charts  | 
-|:---:|----------------------------- |---------------------|
-|  1  | Beggin                       | 142                 | 
+| No. | ชื่อเพลง                       | จำนวนครั้งที่ขึ้น Charts  | ประเภาทของเพลง|
+|:---:|----------------------------- |---------------------|----------------|
+|  1  | Beggin                       | 142                 | pop, post-teen pop|
+และจะสังเกตใน column "Genre" ได้ว่า ประเภทเพลงที่ได้รับความนิยม ส่วนใหญ่จะเป็น "pop"
 
 ## 4.) ค่าเฉลี่ยของ loudness เพลงที่ติด charts 
 ### Code : 
@@ -138,6 +155,17 @@ spotify_tops %>% summarise(avgTempo = mean(Tempo,na.rm=TRUE))
 ```{R}
   avgTempo
 1  122.811
+```
+## 8.) ศิลปินคนใดมียอดผู้ติดตามบน spotify มากที่สุด
+```{R}
+spotify_tops %>% select(Artist , `Artist Followers`) %>% 
+  group_by(Artist) %>%  summarise(maxFollower = max(`Artist Followers`)) %>%
+  slice_max(maxFollower)
+```
+```{R}
+  Artist     maxFollower
+  <chr>            <dbl>
+1 Ed Sheeran    83337783
 ```
 ค่าเฉลี่ยของ Tempo คือ 122.811
 # Summary explore data
