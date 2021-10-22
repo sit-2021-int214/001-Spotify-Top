@@ -16,6 +16,7 @@ Original Datasets from:  [Spotify Top 200 Charts (2020-2021)](https://www.kaggle
 5. chord ใด ที่นิยมนำมาใช้ในเพลงที่ติด charts มากที่สุด ?
 6. มีเพลงใดบ้างที่ติด charts แต่ มี loundness ไม่อยู่ในค่าเฉลี่ย ?
 7. เพลงใดบ้างที่อยู่ต่ำกว่าค่าเฉลี่ยของ Tempo ?
+8. ศิลปินคนใดมียอดผู้ติดตามบน spotify มากที่สุด ?
 
 ### Steps
 1. Define a question
