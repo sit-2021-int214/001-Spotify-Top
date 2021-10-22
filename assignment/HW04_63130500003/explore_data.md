@@ -1,4 +1,4 @@
-# Explore the dataset
+# Part 1 : Explore the dataset
 ### Step 1 : ทำการเรียกใช้ library และ import dataset
 ```{R}
 #Library
