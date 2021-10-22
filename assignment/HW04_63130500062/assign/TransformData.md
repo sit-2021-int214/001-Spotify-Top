@@ -107,7 +107,7 @@ Result:
  region   category                                          product_name    sales
 1  South Technology Cisco TelePresence System EX90 Videoconferencing Unit 22638.48
 ```
-Explain : แสดงภูมิภาคิที่มียอดซื้อมากกว่า 10000 แสดงประเภทสินค้าและชื่อของสินค้าเพื่อวิเคราะห์ภูมิภาคที่ซื้อเพื่อวิเคราะห์ประเภทของสินค้า
+Explain : แสดงภูมิภาคที่มียอดซื้อมากกว่า 10000 แสดงประเภทสินค้าและชื่อของสินค้าเพื่อวิเคราะห์ภูมิภาคที่ซื้อเพื่อวิเคราะห์ประเภทของสินค้า
 
 
 [Visualization](https://github.com/sit-2021-int214/001-Spotify-Top/blob/main/assignment/HW04_63130500062/assign/Visual.md)
