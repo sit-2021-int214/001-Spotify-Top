@@ -65,7 +65,7 @@ $ Chord                       <chr> "B", "C#/Db", "A", "B", "D#/Eb", "G#/Ab", "G
 * Number of Times Charted : จำนวนครั้งที่เพลงนั้นติด charts
 * Week of Highest Charting : สัปดาห์ที่เพลงอยู่อันดับสูงสุดของ charts ข้อมูลเป็นช่วงวันที่ของแต่ละสัปดาห์
 * Song Name : ชื่อเพลง
-* Streams : จำนวนสตรีมโดยประมาณของเพลง
+* Streams : จำนวนการฟังเพลง
 * Artist : ศิลปินหลักที่ทำเพลงนั้น
 * Artist Followers : ยอดผู้ติดตามบน spotify ของศิลปินที่ทำเพลง
 * Song ID : ID ของเพลงที่ spotify ให้มา โดยจะเป็น ID เฉพาะของเพลง ไม่ซ้ำกัน
