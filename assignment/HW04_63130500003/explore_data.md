@@ -37,3 +37,11 @@ $ Number_Of_Pages <dbl> 105, 527, 50, 393, 305, 288, 256, 368, 259, 128, 352, 35
 $ Type            <chr> "Hardcover", "Hardcover", "Kindle Edition", "Hardcover", "Ki~
 $ Price           <dbl> 9.323529, 11.000000, 11.267647, 12.873529, 13.164706, 14.188~
 ```
+จากผลลัพธ์ด้านบนจะเห็นได้ว่ามีข้อมูลทั้งหมด 271 ข้อมูล และตัวแปรทั้งหมด 7 ตัว ซึ่งแต่ละตัวแปรมีความหมาย ดังนี้
+* Rating :
+* Review :
+* Book_title :
+* Description :
+* Number_Of_Pages :
+* Type :
+* Price :
