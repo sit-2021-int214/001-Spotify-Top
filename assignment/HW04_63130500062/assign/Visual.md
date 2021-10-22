@@ -24,4 +24,4 @@ sub.category_plot+ggtitle("The purchasing region of technology more than 5000 ")
     ![Boxplot](https://github.com/sit-2021-int214/001-Spotify-Top/blob/559d53472e5c058149d624e7c44e0c6349a0c7a2/assignment/HW04_63130500062/boxplot.png)
     
     
-[ReadMe](https://github.com/sit-2021-int214/001-Spotify-Top/blob/287d17e8bdcda1f73fa373b8e3f4eb4f7dd36b92/assignment/HW04_63130500062/README.md)
+[ReadMe](https://github.com/sit-2021-int214/001-Spotify-Top/blob/740cdc4e951c1930d481614ca5c3c3ec9f54fdff/assignment/HW04_63130500062/assign/README.md)
