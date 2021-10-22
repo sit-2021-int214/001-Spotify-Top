@@ -3,7 +3,15 @@
 
 ## Step 2). Search datasets from Kaggle
 พวกเราจึงได้หาข้อมูลที่เกี่ยวกับการเก็บข้อมูลต่าง ๆ ในการขึ้น charts ของ spotify จาก [kaggle](https://www.kaggle.com/sashankpillai/spotify-top-200-charts-20202021)<br>
-และใช้คำสั่ง `read.csv()` เพื่อ import dataset
+ก่อนอื่นเราจะต้องเรียกใช้ library ที่จำเป็นก่อน
+#### Library
+```{R}
+library(readr)
+library(assertive)
+library(stringr)
+library(dplyr)
+```
+หลังจากนั้นก็ใช้ `read_csv()` เพื่อ import dataset
 ```{R}
 spotify_tops <- read_csv("https://raw.githubusercontent.com/sit-2021-int214/001-Spotify-Top/main/spotify_dataset_original.csv")
 ```
@@ -26,29 +34,30 @@ glimpse(spotify_tops)
 ```{R}
 Rows: 1,556
 Columns: 23
-$ Index                     <int> 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 1~
-$ Highest.Charting.Position <int> 1, 2, 1, 3, 5, 1, 3, 2, 3, 8, 4, 9, 5, 1, 2, 7, 3, 5, 14, 20~
-$ Number.of.Times.Charted   <int> 8, 3, 11, 5, 1, 18, 16, 10, 8, 10, 43, 9, 3, 19, 10, 10, 17,~
-$ Week.of.Highest.Charting  <chr> "2021-07-23--2021-07-30", "2021-07-23--2021-07-30", "2021-06~
-$ Song.Name                 <chr> "Beggin'", "STAY (with Justin Bieber)", "good 4 u", "Bad Hab~
-$ Streams                   <chr> "48,633,449", "47,248,719", "40,162,559", "37,799,456", "33,~
-$ Artist                    <chr> "MÃ¥neskin", "The Kid LAROI", "Olivia Rodrigo", "Ed Sheeran"~
-$ Artist.Followers          <int> 3377762, 2230022, 6266514, 83293380, 5473565, 5473565, 86400~
-$ Song.ID                   <chr> "3Wrjm47oTz2sjIgck11l5e", "5HCyWlXZPP0y6Gqq8TgA20", "4ZtFanR~
-$ Genre                     <chr> "['indie rock italiano', 'italian pop']", "['australian hip ~
-$ Release.Date              <chr> "2017-12-08", "2021-07-09", "2021-05-21", "2021-06-25", "202~
-$ Weeks.Charted             <chr> "2021-07-23--2021-07-30\n2021-07-16--2021-07-23\n2021-07-09-~
-$ Popularity                <int> 100, 99, 99, 98, 96, 97, 94, 95, 96, 95, 89, 95, 95, 94, 95,~
-$ Danceability              <dbl> 0.714, 0.591, 0.563, 0.808, 0.736, 0.610, 0.762, 0.780, 0.64~
-$ Energy                    <dbl> 0.800, 0.764, 0.664, 0.897, 0.704, 0.508, 0.701, 0.718, 0.64~
-$ Loudness                  <dbl> -4.808, -5.484, -5.044, -3.712, -7.409, -6.682, -3.541, -3.6~
-$ Speechiness               <dbl> 0.0504, 0.0483, 0.1540, 0.0348, 0.0615, 0.1520, 0.0286, 0.05~
-$ Acousticness              <dbl> 0.12700, 0.03830, 0.33500, 0.04690, 0.02030, 0.29700, 0.2350~
-$ Liveness                  <dbl> 0.3590, 0.1030, 0.0849, 0.3640, 0.0501, 0.3840, 0.1230, 0.09~
-$ Tempo                     <dbl> 134.002, 169.928, 166.928, 126.026, 149.995, 178.818, 110.96~
-$ Duration..ms.             <int> 211560, 141806, 178147, 231041, 212000, 137876, 208867, 1996~
-$ Valence                   <dbl> 0.5890, 0.4780, 0.6880, 0.5910, 0.8940, 0.7580, 0.7420, 0.34~
-$ Chord                     <chr> "B", "C#/Db", "A", "B", "D#/Eb", "G#/Ab", "G#/Ab", "D#/Eb", ~
+$ Index                       <dbl> 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 1~
+$ `Highest Charting Position` <dbl> 1, 2, 1, 3, 5, 1, 3, 2, 3, 8, 4, 9, 5, 1, 2, 7, ~
+$ `Number of Times Charted`   <dbl> 8, 3, 11, 5, 1, 18, 16, 10, 8, 10, 43, 9, 3, 19,~
+$ `Week of Highest Charting`  <chr> "2021-07-23--2021-07-30", "2021-07-23--2021-07-3~
+$ `Song Name`                 <chr> "Beggin'", "STAY (with Justin Bieber)", "good 4 ~
+$ Streams                     <dbl> 48633449, 47248719, 40162559, 37799456, 33948454~
+$ Artist                      <chr> "Måneskin", "The Kid LAROI", "Olivia Rodrigo", "~
+$ `Artist Followers`          <dbl> 3377762, 2230022, 6266514, 83293380, 5473565, 54~
+$ `Song ID`                   <chr> "3Wrjm47oTz2sjIgck11l5e", "5HCyWlXZPP0y6Gqq8TgA2~
+$ Genre                       <chr> "['indie rock italiano', 'italian pop']", "['aus~
+$ `Release Date`              <chr> "2017-12-08", "2021-07-09", "2021-05-21", "2021-~
+$ `Weeks Charted`             <chr> "2021-07-23--2021-07-30\n2021-07-16--2021-07-23\~
+$ Popularity                  <dbl> 100, 99, 99, 98, 96, 97, 94, 95, 96, 95, 89, 95,~
+$ Danceability                <dbl> 0.714, 0.591, 0.563, 0.808, 0.736, 0.610, 0.762,~
+$ Energy                      <dbl> 0.800, 0.764, 0.664, 0.897, 0.704, 0.508, 0.701,~
+$ Loudness                    <dbl> -4.808, -5.484, -5.044, -3.712, -7.409, -6.682, ~
+$ Speechiness                 <dbl> 0.0504, 0.0483, 0.1540, 0.0348, 0.0615, 0.1520, ~
+$ Acousticness                <dbl> 0.12700, 0.03830, 0.33500, 0.04690, 0.02030, 0.2~
+$ Liveness                    <dbl> 0.3590, 0.1030, 0.0849, 0.3640, 0.0501, 0.3840, ~
+$ Tempo                       <dbl> 134.002, 169.928, 166.928, 126.026, 149.995, 178~
+$ `Duration (ms)`             <dbl> 211560, 141806, 178147, 231041, 212000, 137876, ~
+$ Valence                     <dbl> 0.5890, 0.4780, 0.6880, 0.5910, 0.8940, 0.7580, ~
+$ Chord                       <chr> "B", "C#/Db", "A", "B", "D#/Eb", "G#/Ab", "G#/Ab~
+> 
 ```
 ซึ่งแต่ละตัวแปรมีความหมาย ดังนี้
 
