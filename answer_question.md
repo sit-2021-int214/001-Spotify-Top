@@ -45,7 +45,7 @@ spotify_tops %>% select(`Song Name` , `Number of Times Charted`,Genre) %>%
 ```
 ### Result :
 ```{R}
-`Song Name`           `Number of Times Charted` Genre                              
+`Song Name`               `Number of Times Charted` Genre                              
    <chr>                                     <dbl> <chr>                              
  1 Falling                                     142 ['pop', 'post-teen pop']           
  2 Circles                                      84 ['dfw rap', 'melodic rap', 'rap']  
