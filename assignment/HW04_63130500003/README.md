@@ -2,7 +2,7 @@
 ### Created by กัญญาพัชร วิทยามานิตกุล (ID : 63130500003)
 Top 270 Computer Science / Programing Books Data from Thomas Konstantin, [Kaggle](https://www.kaggle.com/thomaskonstantin/top-270-rated-computer-science-programing-books)
 ### Outlines
-1. [Explore the dataset](#)
+1. [Explore the dataset](https://github.com/sit-2021-int214/001-Spotify-Top/tree/main/assignment/HW04_63130500003)
 2. [Learning function from Tidyverse](#)
 3. [Transform data with dplyr and finding insight the data](#)
 4. [Visualization with GGplot2](#)
