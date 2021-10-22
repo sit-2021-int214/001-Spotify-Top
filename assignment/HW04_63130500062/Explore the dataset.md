@@ -44,3 +44,5 @@ $ Product.Name  <chr> "Bush Somerset Collection Bookcase", "Hon Deluxe Fabric Up
 $ Sales         <dbl> 261.9600, 731.9400, 14.6200, 957.5775, 22.3680, 48.8600, 7.2800, 907.1520...
 
 ```
+
+[Learning](https://github.com/sit-2021-int214/001-Spotify-Top/blob/0b690d2cf99fdd35b2a7431e1d5e28228d671434/assignment/HW04_63130500062/Learning%20function%20from%20Tidyverse.md)
