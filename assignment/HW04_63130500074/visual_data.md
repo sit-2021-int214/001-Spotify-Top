@@ -19,3 +19,5 @@ bar_plot + ggtitle("Reviews & Rating") +
 Result:
 
 ![Graph 2](Graph2.png)
+
+And then I use tools : Power BI to make a graph [click here](https://app.powerbi.com/view?r=eyJrIjoiOWRlMjA5ZDgtMWUwNS00YTM0LTkyNmUtMWFiMzIzNzJmOTJmIiwidCI6IjZmNDQzMmRjLTIwZDItNDQxZC1iMWRiLWFjMzM4MGJhNjMzZCIsImMiOjEwfQ%3D%3D&pageName=ReportSection)
