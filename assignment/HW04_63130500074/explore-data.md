@@ -49,7 +49,7 @@ Result :
                     3rd Qu.: 67.854  
                     Max.   :235.650  
 ```
-
+explore dataset
 ```{R}
 prog_book %>% head()
 prog_book %>% View()
@@ -57,9 +57,9 @@ str(prog_book)
 ```
 
 In this dataset has .....
-Book_title  :
-Description :
-Type  :
-Rating  : 
-Number_Of_Pages :
-Price :
+Book_title  : ชื่อหนังสือ หัวข้อเรื่องของหนังสือ
+Description : คำอธิบายเกี่ยวกับหนังสือ รายละเอียดหนังสือ
+Type  : ประเภทของหนังสือ 
+Rating  : คะแนนการประเมินของหนังสือ
+Number_Of_Pages : จำนวนหน้าหนังสือ
+Price : ราคาของหนังสือ
