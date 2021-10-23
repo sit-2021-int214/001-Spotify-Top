@@ -109,4 +109,4 @@ Result :
  9   3.87    2093 Weapons of Math D… "A former Wall Stre…             259 Hardc… 14.5            0.0560
 10   4.62       0 ZX Spectrum Games… "This book is ideal…             128 Paper… 14.6            0.114
 ```
-
+ไปต่อกันที่ Part3 : [Transform data with dplyr and finding insight the data](https://github.com/sit-2021-int214/001-Spotify-Top/blob/main/assignment/HW04_63130500074/transform_data.md)
