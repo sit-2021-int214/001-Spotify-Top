@@ -1,74 +1,79 @@
 # Part 2: Learning function from Tidyverse
 
-- Function `select()` from package [dplyr](https://dplyr.tidyverse.org/articles/dplyr.html#select-columns-with-select)). It using for select columns.
-- Function `arrange()` from package [dplyr](https://dplyr.tidyverse.org/articles/dplyr.html#select-columns-with-select)). It using for arrange data that you want such as asc desc in sql.
-- Function `filter()` from package [dplyr](https://dplyr.tidyverse.org/articles/dplyr.html#select-columns-with-select)). It using for filter data that you want to see .
-- Function `slice()` from package [dplyr](https://dplyr.tidyverse.org/articles/dplyr.html#select-columns-with-select)). It using for slice columns that you choose.
-- Function `mutate()` from package [dplyr](https://dplyr.tidyverse.org/articles/dplyr.html#select-columns-with-select)). It using for mutate columns that means add one column right.
+- Function `distinct()` from package [dplyr](https://dplyr.tidyverse.org/articles/base.html). It using for select distinct data in columns that you choose.
+- Function `relocate()` from package [dplyr](https://dplyr.tidyverse.org/articles/base.html). It using for locate column the you want into front
+- Function `pull()` from package [dplyr](https://dplyr.tidyverse.org/articles/base.html). It using for extract data with single values.
+- Function `slice()` from package [dplyr](https://dplyr.tidyverse.org/articles/base.html). It using for slice columns that you choose.
+- Function `mutate()` from package [dplyr](https://dplyr.tidyverse.org/articles/base.html). It using for mutate columns that means add one column right.
 
 ## Example Code
-1. ใช้ Function `select()` เพื่อเลือกชื่อหนังสือและราคาหนังสือ
+1. ใช้ Function `distinct()` เพื่อราคาหนังสือที่ไม่ซ้ำกันเลย
 ```{R}
-prog_book %>% select(Book_title,Price)
+prog_book %>% distinct(Price)
 ```
 Result : 
 ```{R}
-# A tibble: 271 × 2
-   Book_title                                                                             Price
-   <chr>                                                                                  <dbl>
- 1 The Elements of Style                                                                   9.32
- 2 The Information: A History, a Theory, a Flood                                          11   
- 3 Responsive Web Design Overview For Beginners                                           11.3 
- 4 Ghost in the Wires: My Adventures as the World's Most Wanted Hacker                    12.9 
- 5 How Google Works                                                                       13.2 
- 6 The Meme Machine                                                                       14.2 
- 7 Start with Why: How Great Leaders Inspire Everyone to Take Action                      14.2 
- 8 Algorithms to Live By: The Computer Science of Human Decisions                         14.4 
- 9 Weapons of Math Destruction: How Big Data Increases Inequality and Threatens Democracy 14.5 
-10 ZX Spectrum Games Code Club: Twenty fun games to code and learn                        14.6 
-# … with 261 more rows
+Price
+   <dbl>
+ 1  9.32
+ 2 11   
+ 3 11.3 
+ 4 12.9 
+ 5 13.2 
+ 6 14.2 
+ 7 14.2 
+ 8 14.4 
+ 9 14.5 
+10 14.6 
+# … with 231 more rows
 ```
-2. ใช้ Function `arrange()` เพื่อเรียงราคาหนังสือจากมากไปน้อย 
+2. ใช้ Function `relocate()` เพื่อย้ายคอลัมน์ Book_title,Price มาไว้ด้านหน้า
 ```{R}
-prog_book %>% arrange(desc(Price))
+prog_book %>% relocate(Book_title,Price)
 ```
 Result : 
 ```{R}
 # A tibble: 271 × 7
-   Rating Reviews Book_title                  Description                 Number_Of_Pages Type    Price
-    <dbl>   <dbl> <chr>                       <chr>                                 <dbl> <chr>   <dbl>
- 1   3.84       5 A Discipline for Software … "Designed to help individu…             789 Hardco…  236.
- 2   4.49      36 The Art of Computer Progra… "Knuth's classic work has …             896 Boxed …  220.
- 3   4.77       4 The Art of Computer Progra… "\"The bible of all fundam…            3168 Hardco…  220.
- 4   3.94      22 An Introduction to Databas… "Continuing in the eighth …            1040 Paperb…  212.
- 5   3.76       0 3D Game Engine Architectur… "Dave Eberly's 3D Game Eng…             752 Hardco…  203.
- 6   4.26       5 Numerical Recipes: The Art… "Co-authored by four leadi…            1235 Hardco…  176.
- 7   3.82       0 Game Programming Gems 3     "The journey continues wit…             663 Hardco…  143.
- 8   3.77       0 Game Programming Gems 4     "Uncover the secrets of th…             703 Hardco…  139.
- 9   4.08      56 Compilers: Principles, Tec… "This introduction to comp…             796 Hardco…  127.
-10   3.82       0 Game Programming Gems 6     "Welcome to the sixth volu…             700 Hardco…  119.
+   Book_title     Price Rating Reviews Description     Number_Of_Pages Type 
+   <chr>          <dbl>  <dbl>   <dbl> <chr>                     <dbl> <chr>
+ 1 The Elements …  9.32   4.17    3829 "This style ma…             105 Hard…
+ 2 The Informati… 11      4.01    1406 "James Gleick,…             527 Hard…
+ 3 Responsive We… 11.3    3.33       0 "In Responsive…              50 Kind…
+ 4 Ghost in the … 12.9    3.97    1658 "If they were …             393 Hard…
+ 5 How Google Wo… 13.2    4.06    1325 "Both Eric Sch…             305 Kind…
+ 6 The Meme Mach… 14.2    3.84     117 "What is a mem…             288 Pape…
+ 7 Start with Wh… 14.2    4.09    5938 "Why do you do…             256 Hard…
+ 8 Algorithms to… 14.4    4.15    1817 "A fascinating…             368 Hard…
+ 9 Weapons of Ma… 14.5    3.87    2093 "A former Wall…             259 Hard…
+10 ZX Spectrum G… 14.6    4.62       0 "This book is …             128 Pape…
 # … with 261 more rows
 ```
 3. ใช้ Function `filter()` เพื่อเลือกข้อมูลเฉพาะราคาที่มีราคามากกว่าค่าเฉลี่ย
 ```{R}
-prog_book %>% filter(Price > mean(Price, na.rm = TRUE))
+prog_book %>% pull(Rating)
 ```
 Result : 
 ```{R}
-# A tibble: 105 × 7
-   Rating Reviews Book_title                   Description                  Number_Of_Pages Type  Price
-    <dbl>   <dbl> <chr>                        <chr>                                  <dbl> <chr> <dbl>
- 1   3.91      57 Effective Programming: More… "Jeff Atwood began the Codi…             283 ebook  54.7
- 2   4.18     302 Building Microservices: Des… "Distributed systems have b…             262 Pape…  54.9
- 3   4.21       8 Exceptional C++: 47 Enginee… "Exceptional C++ shows by e…             208 Pape…  56.1
- 4   4.25       1 Reviewing Java               "Reviewing Java provides yo…             658 Pape…  56.6
- 5   4.35       2 Microsoft Visual C# Step by… "Your hands-on guide to Mic…             816 Pape…  56.6
- 6   4.25     275 Refactoring: Improving the … "As the application of obje…             431 Hard…  57.2
- 7   4.19     116 Growing Object-Oriented Sof… "Foreword by Kent Beck \"Th…             345 Pape…  57.2
- 8   4.24      26 Modern C++ Design: Generic … "In Modern C++ Design, Andr…             360 Pape…  58.4
- 9   4.46     164 Structure and Interpretatio… "Structure and Interpretati…             657 Pape…  58.9
-10   4.46     164 Structure and Interpretatio… "There are new implementati…             657 Hard…  58.9
-# … with 95 more rows
+  [1] 4.17 4.01 3.33 3.97 4.06 3.84 4.09 4.15 3.87 4.62 4.03 3.78 3.73 3.87
+ [15] 3.87 3.95 3.85 3.94 3.75 4.10 4.22 3.71 4.21 4.28 3.20 3.67 3.97 3.98
+ [29] 3.96 4.37 4.25 4.32 4.01 4.13 4.15 3.91 3.86 4.03 4.23 4.04 4.09 4.33
+ [43] 4.09 3.93 4.00 4.27 3.84 4.20 4.06 3.65 4.08 4.15 4.01 4.06 5.00 4.12
+ [57] 4.35 4.11 4.35 4.11 3.32 4.00 3.97 4.28 3.91 3.68 3.78 4.40 4.04 4.15
+ [71] 4.02 3.76 4.15 3.60 4.16 4.27 4.05 3.68 4.16 4.34 4.11 4.39 3.88 3.70
+ [85] 3.83 4.11 3.22 4.31 4.31 4.27 4.05 4.28 4.43 4.50 3.38 3.87 4.29 3.97
+ [99] 4.25 3.89 4.29 4.20 3.78 4.54 4.34 4.49 4.11 4.15 3.82 4.40 3.97 4.02
+[113] 3.58 3.75 4.67 4.33 4.20 4.30 3.73 4.29 3.86 3.82 4.04 4.28 4.20 4.50
+[127] 3.98 3.83 4.18 3.96 3.67 4.72 3.37 4.25 4.03 4.13 3.93 4.62 4.40 4.17
+[141] 4.08 4.08 3.79 4.22 4.23 4.14 4.54 3.58 4.00 4.40 4.21 3.93 4.11 4.34
+[155] 4.08 3.83 4.18 4.23 4.23 4.12 4.28 4.18 4.15 3.93 4.33 4.22 3.91 4.18
+[169] 4.21 4.25 4.35 4.25 4.19 4.24 4.46 4.46 4.00 3.00 3.83 4.16 4.14 4.10
+[183] 3.00 4.18 3.52 4.13 4.12 3.00 4.22 4.37 4.21 4.37 3.88 3.70 4.67 4.21
+[197] 3.87 4.05 4.58 3.92 4.20 4.00 4.32 3.96 3.95 4.42 4.08 4.00 3.96 4.31
+[211] 4.15 4.23 4.13 3.56 4.30 3.78 4.41 3.86 4.24 4.23 4.33 4.25 4.05 4.34
+[225] 4.15 3.94 3.59 3.48 4.45 4.02 4.03 3.92 3.77 3.91 4.25 4.14 4.23 4.00
+[239] 4.01 4.03 4.33 4.06 3.97 4.37 4.10 4.35 4.37 3.90 4.02 4.03 4.10 4.42
+[253] 4.11 4.11 3.96 3.67 4.13 3.87 4.16 4.18 3.45 3.82 4.08 3.77 3.82 4.26
+[267] 3.76 3.94 4.49 4.77 3.84
 ```
 4. ใช้ Function `slice()` เพื่อเลือกข้อมูลเฉพาะแถวที่ 1 ถึง 5 
 ```{R}
