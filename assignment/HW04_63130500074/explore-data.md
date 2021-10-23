@@ -63,3 +63,5 @@ In this dataset has .....
 * Rating  : คะแนนการประเมินของหนังสือ
 * Number_Of_Pages : จำนวนหน้าหนังสือ
 * Price : ราคาของหนังสือ
+
+ไปต่อกันที่ Part 2 : [Learning function from Tidyverse](https://github.com/sit-2021-int214/001-Spotify-Top/blob/main/assignment/HW04_63130500074/tidyverse.md)
