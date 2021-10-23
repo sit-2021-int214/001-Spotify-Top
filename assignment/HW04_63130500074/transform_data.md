@@ -1,18 +1,54 @@
 # Part 3: Transform data with dplyr and finding insight the data
 
-1.หนังสือที่มี Rating เกินกว่าค่าเฉลี่ย
+### 1.ชื่อหนังสือที่มี Rating เกินกว่าค่าเฉลี่ย และมีรีวิวมากกว่า 200 ซึ่งจะต้องเป็นประเภท Paperback ด้วย
 
 ```{R}
-#Code here
+prog_book %>% select(Book_title,Rating,Reviews,Type) %>% filter(Rating>mean(Rating)) %>%
+  filter(Reviews>200) %>% filter(Type=="Paperback")
 ```
-
 Result:
 ```{R}
-
-
-#Copy Result from console to here
+# A tibble: 16 × 4
+   Book_title                                         Rating Reviews Type   
+   <chr>                                               <dbl>   <dbl> <chr>  
+ 1 The Code Book: The Science of Secrecy from Ancien…   4.28    1268 Paperb…
+ 2 What Is Life? with Mind and Matter and Autobiogra…   4.15     295 Paperb…
+ 3 JavaScript: The Good Parts                           4.23     530 Paperb…
+ 4 Accelerate: Building and Scaling High-Performing …   4.09     336 Paperb…
+ 5 Code: The Hidden Language of Computer Hardware an…   4.4      547 Paperb…
+ 6 Eloquent JavaScript: A Modern Introduction to Pro…   4.15     203 Paperb…
+ 7 Pro Git                                              4.16     259 Paperb…
+ 8 Code Complete                                        4.29     395 Paperb…
+ 9 The Clean Coder: A Code of Conduct for Profession…   4.28     464 Paperb…
+10 Designing Data-Intensive Applications: The Big Id…   4.72     362 Paperb…
+11 Clean Code: A Handbook of Agile Software Craftsma…   4.4      875 Paperb…
+12 Peopleware: Productive Projects and Teams            4.17     452 Paperb…
+13 Head First Design Patterns                           4.28     404 Paperb…
+14 Building Microservices: Designing Fine-Grained Sy…   4.18     302 Paperb…
+15 Working Effectively with Legacy Code                 4.14     224 Paperb…
+16 The C Programming Language                           4.42     426 Paperb…
 ```
-//Explain
+### 2.คำอธิบายหนังสือที่มี ราคาต่อหน้าต่ำกว่า 0.1 แล้วมีเรทติ้ง มากกว่า 4.0
 
-- list 1
-- list 2
+```{R}
+prog_book %>% mutate(Price/Number_Of_Pages) %>% filter(`Price/Number_Of_Pages`<0.1) %>%
+  filter(Rating>4)
+```
+Result:
+```{R}
+# A tibble: 68 × 8
+   Rating Reviews Book_title    Description    Number_Of_Pages Type  Price `Price/Number_O…
+    <dbl>   <dbl> <chr>         <chr>                    <dbl> <chr> <dbl>            <dbl>
+ 1   4.17    3829 The Elements… "This style m…             105 Hard…  9.32           0.0888
+ 2   4.01    1406 The Informat… "James Gleick…             527 Hard… 11              0.0209
+ 3   4.06    1325 How Google W… "Both Eric Sc…             305 Kind… 13.2            0.0432
+ 4   4.09    5938 Start with W… "Why do you d…             256 Hard… 14.2            0.0556
+ 5   4.15    1817 Algorithms t… "A fascinatin…             368 Hard… 14.4            0.0390
+ 6   4.03     160 Sync: The Em… "At the heart…             352 Hard… 15.2            0.0433
+ 7   4.1     2092 The Innovato… "The computer…             542 Hard… 17.2            0.0318
+ 8   4.22      27 Debugging: T… "When the pre…             192 Pape… 17.5            0.0911
+ 9   4.21      16 Help Your Ki… "Take your ki…             224 Pape… 18.9            0.0845
+10   4.28    1268 The Code Boo… "In his first…             412 Pape… 19.1            0.0464
+# … with 58 more rows
+```
+ไปต่อกันที่ Part 4 : [Visualization with GGplot2](https://github.com/sit-2021-int214/001-Spotify-Top/blob/main/assignment/HW04_63130500074/visual_data.md)
