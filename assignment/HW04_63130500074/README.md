@@ -11,5 +11,11 @@ Choose Dataset:
 3. [Transform data with dplyr and finding insight the data](https://github.com/sit-2021-int214/001-Spotify-Top/blob/main/assignment/HW04_63130500074/transform_data.md)
 4. [Visualization with GGplot2](https://github.com/sit-2021-int214/001-Spotify-Top/blob/main/assignment/HW04_63130500074/visual_data.md)
 
+## About Us
+งานนี้เป็นส่วนของวิชา INT214 Statistics for Information technology <br/> ภาคเรียนที่ 1 ปีการศึกษา 2564 คณะเทคโนโลยีสารสนเทศ มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าธนบุรี
+### Instructor
+- ATCHARA TRAN-U-RAIKUL
+- JATAWAT XIE (gitHub : [safesit23](https://github.com/safesit23))
+
 
 
