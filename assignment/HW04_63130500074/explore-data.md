@@ -12,6 +12,14 @@ library(dplyr)
 ```{R}
 prog_book <- read_csv("https://raw.githubusercontent.com/safesit23/INT214-Statistics/main/datasets/prog_book.csv")
 ```
+Result :
+```{R}
+Rows: 271 Columns: 7                                                                     
+── Column specification ───────────────────────────────────────────────────────────────────
+Delimiter: ","
+chr (3): Book_title, Description, Type
+dbl (3): Rating, Number_Of_Pages, Price
+```
 explore dataset
 ```{R}
 glimpse(prog_book)
