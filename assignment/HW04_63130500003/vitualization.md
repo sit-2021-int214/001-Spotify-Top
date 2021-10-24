@@ -5,7 +5,7 @@
 ggplot(Top_Book,aes(x=Type,fill=Type)) + geom_bar()+
   scale_fill_hue(c = 40) 
 ```
-#### Result : จากกราฟจะเป็นได้ว่าหนังสือประเภท paper back มีจำนวนหนังสือมากที่สุด
+#### Result : จากกราฟจะเห็นได้ว่าหนังสือประเภท paper back มีจำนวนหนังสือมากที่สุด
 ![barGraph](https://github.com/sit-2021-int214/001-Spotify-Top/blob/main/assignment/HW04_63130500003/graph/bar2.png)
 
 
@@ -13,7 +13,7 @@ ggplot(Top_Book,aes(x=Type,fill=Type)) + geom_bar()+
 ```{R}
 Top_Book %>% ggplot(aes(x=Price,y=Reviews))+geom_point(aes(color=Price))
 ```
-#### Result :จากกราฟจะเห็นได้ว่า ราคาของสินค้าไม่ขึ้นอยู่กับจำนวนรีวิว เนื่องจากกราฟไม่สัมพันธ์กัน
+#### Result : จากกราฟจะเห็นได้ว่า ราคาของสินค้าไม่ขึ้นอยู่กับจำนวนรีวิว เนื่องจากกราฟไม่สัมพันธ์กัน
 ![scatter](https://github.com/sit-2021-int214/001-Spotify-Top/blob/main/assignment/HW04_63130500003/graph/Scatter.png)
 
 # [Part B](https://app.powerbi.com/view?r=eyJrIjoiNjdhZWM1ZjMtNjUxZC00NDMyLWEyNzMtYmY1ZWE3OTMyMTEwIiwidCI6IjZmNDQzMmRjLTIwZDItNDQxZC1iMWRiLWFjMzM4MGJhNjMzZCIsImMiOjEwfQ%3D%3D&pageName=ReportSection)
