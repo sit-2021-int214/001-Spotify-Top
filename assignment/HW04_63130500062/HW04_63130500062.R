@@ -14,9 +14,6 @@ superstore <- clean_names(superstore)
 colnames(superstore)
 head(superstore)
 
-superstore %>% summarise(sumOfSales = sum(Sales))
-
-
 #1
 superstore %>% select(customer_name ,category , sales ) %>%
   slice_max(sales , n=5 )
@@ -58,9 +55,5 @@ sub.category_plot <- superstore %>% filter(sales > 5000 & category == 'Technolog
   ggplot(aes(x=region)) + geom_bar()
 
 sub.category_plot+ggtitle("The purchasing region of technology more than 5000 ") + xlab("Region") + ylab("SALES")
-
-
-
-
 
 write.csv(superstore,"D:/R/superstore.csv", row.names=FALSE)
