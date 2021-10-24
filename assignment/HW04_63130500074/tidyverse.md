@@ -48,7 +48,7 @@ Result :
 10 ZX Spectrum G… 14.6    4.62       0 "This book is …             128 Pape…
 # … with 261 more rows
 ```
-3. ใช้ Function `filter()` เพื่อเลือกข้อมูลเฉพาะราคาที่มีราคามากกว่าค่าเฉลี่ย
+3. ใช้ Function `pull()` เพื่อดึงข้อมูล Rating ออกมาจากตาราง
 ```{R}
 prog_book %>% pull(Rating)
 ```
@@ -89,7 +89,7 @@ Rating Reviews Book_title               Description                     Number_O
 4   3.97    1658 Ghost in the Wires: My … "If they were a hall of fame o…             393 Hardco… 12.9 
 5   4.06    1325 How Google Works         "Both Eric Schmidt and Jonatha…             305 Kindle… 13.2 
 ```
-5. ใช้ Function `mutate()` เพื่อเลือกข้อมูลเฉพาะราคาที่มีราคามากกว่าค่าเฉลี่ย
+5. ใช้ Function `mutate()` เพื่อเพิ่มคอลัมน์ Price/Number_Of_Pages เพื่อหาราคาต่อ 1 หน้า
 ```{R}
 prog_book %>% mutate(Price/Number_Of_Pages)
 ```
