@@ -14,3 +14,11 @@ Top_Book %>% ggplot(aes(x=Price,y=Reviews))+geom_point(aes(color=Price))
 ```
 #### Result :
 ![scatter](https://github.com/sit-2021-int214/001-Spotify-Top/blob/main/assignment/HW04_63130500003/graph/Scatter.png)
+
+# [Part B](https://app.powerbi.com/view?r=eyJrIjoiNjdhZWM1ZjMtNjUxZC00NDMyLWEyNzMtYmY1ZWE3OTMyMTEwIiwidCI6IjZmNDQzMmRjLTIwZDItNDQxZC1iMWRiLWFjMzM4MGJhNjMzZCIsImMiOjEwfQ%3D%3D&pageName=ReportSection)
+กราฟที่ 1 : เป็นกราฟที่แสดงถึงจำนวนหนังสือในแต่ละประเภท<br>
+กราฟที่ 2 : เป็นกราฟที่แสดงจำนวนของการรีวิว<br>
+กราฟที่ 3 : เป็นกราฟที่แสดงถึง rating<br>
+และจะมีการ์ดที่เอาไว้แสดงชื่อหนังสือ, คำอธิบาย และราคา
+
+เมื่อเราคลิกไปที่กราฟแรกและเลือกมา 1 ประเภท กราฟที่ 2 และ 3 จะเปลี่ยนกราฟให้ตรงกับประเภทนั้นๆ แล้วในส่วนของราคาจะเป็นราคาเฉลี่ยของประเภทนั้น แต่หากคลกที่ชื่อหนึ่งสื่อตรงแกน x ของ กราฟ 2 และ 3 ในส่วนของราคาจะแสดงเป็นราคาของหนังสือเล่มนั้นๆ และจะแสดงชื่อหนังสือกับคำอธิบายของหนังสือเล่มนั้นๆด้วย
