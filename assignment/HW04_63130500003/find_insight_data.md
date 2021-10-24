@@ -137,5 +137,6 @@ ratingMore<- Top_Book %>% filter(Rating > 4.5)
 count(ratingMore) #10
 ```
 หนังสือที่มี rating มากกว่า 4.5 มีจำนวน 10 เล่ม
+<br><br>
 
 ต่อไปเราจะไปดูการ [vitualization](https://github.com/sit-2021-int214/001-Spotify-Top/blob/main/assignment/HW04_63130500003/vitualization.md) กันต่อ
