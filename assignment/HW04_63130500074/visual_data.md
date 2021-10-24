@@ -1,4 +1,10 @@
 # Part 4: Visualization with GGplot2
+
+## Import Libary `library(ggplot2)` a library will help you create graph in R
+```{R}
+library(ggplot2)
+```
+
 ### 1.) Graph show relation between Price and Number_Of_Pages
 ```{R}
 scat_plot <- prog_book %>% filter(Price<100) %>% ggplot(aes(x=Price,y=Number_Of_Pages))+
