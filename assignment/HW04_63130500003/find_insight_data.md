@@ -1,6 +1,6 @@
 # Part 2 : Learning function from Tidyverse & <br>Transform data with dplyr and finding insight the data
 ### 1. หนังสือเล่มใดมีจำนวนการรีวิวมากที่สุด 3 อันดับ
-* ฟังก์ชัน `slice_max()` มาจาก package [dplyr](https://dplyr.tidyverse.org/articles/dplyr.html#select-columns-with-select) ซึ่งฟังก์ชันนี้ใช้สำหรับตัดเอาค่ามากที่สุดตามที่ต้องการมา โดยสามารถตัดมากี่ข้อมูลก็ได้ตามที่เราต้องการ จาก code ด้านล่าง ตัดมา 3 รายการ จาก Reviews
+* ฟังก์ชัน `slice_max()` มาจาก package [dplyr](https://dplyr.tidyverse.org/articles/dplyr.html#select-columns-with-select) ซึ่งฟังก์ชันนี้ใช้สำหรับตัดเอาค่ามากที่สุดตามที่ต้องการมา โดยสามารถตัดมากี่ข้อมูลก็ได้ตามที่เราต้องการ จาก code ด้านล่าง ตัดมา 3 รายการที่มากที่สุด จาก Reviews
 #### Code :
 ```{R}
 Top_Book %>% select(Book_title, Reviews) %>%
