@@ -130,7 +130,8 @@ Top_Book %>% select(Book_title, Rating, Price) %>%
   <chr>                                                            <dbl> <dbl>
 1 ZX Spectrum Games Code Club: Twenty fun games to code and learn   4.62  14.6
 ```
-จะเห็นได้ว่า "ZX Spectrum Games Code Club: Twenty fun games to code and learn" มี rating 4.62 ซึ่งมีราคาประมาณ 14.6 USD แล้วหนังสือที่มี rating มากกว่า 4.5 มีจำนวนกี่เล่ม???
+จะเห็นได้ว่า "ZX Spectrum Games Code Club: Twenty fun games to code and learn" มี rating 4.62 ซึ่งมีราคาประมาณ 14.6 USD<br>
+แล้วหนังสือที่มี rating มากกว่า 4.5 มีจำนวนกี่เล่ม???
 ```{R}
 ratingMore<- Top_Book %>% filter(Rating > 4.5) 
 count(ratingMore) #10
