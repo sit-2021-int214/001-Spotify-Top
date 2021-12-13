@@ -2,12 +2,13 @@
 ## Step to do:
 ### Step to do:
 
-Step 0 Assign variables:
+#### Step 0 Assign variables:
    - u0 or p0
    - xbar or pbar
    - n
    - sd (or sigma)
    - alpha (default is 0.05)
+
 Step 1 State the hypothesis
 Step 2 Select Level of significance (alpha)
 Step 3 Select Test statistic (This formula for one population)
