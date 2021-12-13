@@ -26,7 +26,7 @@ Step 5 Compare P-value with alpha or z/t with zalpha/talpha
 
 Step 6 Conclusion
 
-### Problem
+## Problem
 
 
 Step 0: Assign variables
