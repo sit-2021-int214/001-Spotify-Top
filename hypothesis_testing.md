@@ -1,7 +1,6 @@
 # Analytical Inferential Statistics
 ## Hypothesis testing
-## Defind question
-ตั้งสมมติฐานว่า เพลงที่จะขึ้น Top 1-200 charts ของ Spotify จะต้องมีจำนวนการสตรีมเพลงมากกว่า 7000000 ครั้ง ซึ่งใน 1-200 ลำดับมีค่าเฉลี่ยการสตรีมอยู่ที่ 6340219 ครั้ง และมีส่วนเบี่ยงเบนมาตรฐาน เท่ากับ 369479 ครั้ง ( ถ้ากำหนดค่า alpha เท่ากับ 0.05 )
+
 ### Step to do :
 
 
@@ -31,7 +30,8 @@ Step 5 Compare P-value with alpha or z/t with zalpha/talpha
 Step 6 Conclusion
 
 ## Problem
-
+## Defind question
+ตั้งสมมติฐานว่า เพลงที่จะขึ้น Top 1-200 charts ของ Spotify จะต้องมีจำนวนการสตรีมเพลงมากกว่า 7000000 ครั้ง ซึ่งใน 1-200 ลำดับมีค่าเฉลี่ยการสตรีมอยู่ที่ 6340219 ครั้ง และมีส่วนเบี่ยงเบนมาตรฐาน เท่ากับ 369479 ครั้ง ( ถ้ากำหนดค่า alpha เท่ากับ 0.05 )
 
 Step 0: Assign variables
 
