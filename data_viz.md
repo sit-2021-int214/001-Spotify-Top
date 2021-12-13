@@ -4,6 +4,8 @@
 
 ### Dashboard
 
+![img](https://github.com/sit-2021-int214/001-Spotify-Top/blob/main/powerBi-final.png)
+
 ### จากการใช้ Bi tool ในการสำรวจข้อมูล ทำให้ทราบข้อมูลดังนี้
 
 1
