@@ -1,5 +1,5 @@
-# Hypothesis testing
-## Step to do:
+# Analytical Inferential Statistics
+## Step to do Hypothesis testing:
 
 Step 0 Assign variables:
    - u0 or p0
