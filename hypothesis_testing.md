@@ -34,39 +34,56 @@ Step 6 Conclusion
 Step 0: Assign variables
 
 ```
-
+meanStreams <- mean(spotify_top$Streams) #mean = 6340219
+sdStreams <- sd(spotify_top$Streams)   #sd = 3369479
 ```
 
 Step 1: State the hypothesis
 
 ```
-
+Ho:mue>7000000
+Ha:mue<=7000000
 ```
 
 Step 2: Level of significance
 
 ```
-
+alpha = 0.05 
 ```
 
 Step 3: Test statistic
 
 ```
-
+zStreams <- (meanStreams - 7000000)/(sdStreams/sqrt(200))
 ```
 
 Step 4: Finding P-value approach or Critical Value approach
 
 ```
-
+# P-value
+pvalueStreams <- pnorm(zStreams)
+# Critical Value 
+zalphaStreams <- qnorm(0.05)
 ```
 
 Step 5: Compare
 
 ```
+if(pvalueStreams<=0.05){
+  print("Reject H0")
+}else{
+  print("Accept H0")
+}
 
+# Using critical value
+if(zStreams<=zalphaStreams){
+  print("Reject H0")
+}else{
+  print("Accept H0")
+}
 ```
 
 Step 6: Conclusion
-
-//Answer
+```
+เพลงที่จะขึ้น top 1-200 ของ charts ใน spotify จะต้องมีจำนวนการสตรีมเพลงน้อยกว่าหรือเท่ากับ 7000000
+```
