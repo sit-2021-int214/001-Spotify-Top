@@ -35,8 +35,8 @@ Original Datasets from:  [Spotify Top 200 Charts (2020-2021)](https://www.kaggle
 1. [Explore Data](https://github.com/sit-2021-int214/001-Spotify-Top/blob/main/exploreData.md)
 2. [Data Cleaning](https://github.com/sit-2021-int214/001-Spotify-Top/blob/main/data_cleaning.md)
 3. [Data Analysis (Answer all define question)](https://github.com/sit-2021-int214/001-Spotify-Top/blob/main/answer_question.md)
-4. [Data Visualization](#)
-5. [Analytical Inferential Statistics](#)
+4. [Data Visualization](https://github.com/sit-2021-int214/001-Spotify-Top/blob/main/data_viz.md)
+5. [Analytical Inferential Statistics](https://github.com/sit-2021-int214/001-Spotify-Top/blob/main/hypothesis_testing.md)
 
 ## Resources
 
