@@ -36,6 +36,7 @@ Step 6 Conclusion
 Step 0: Assign variables
 
 ```
+n <- 1556
 meanStreams <- mean(spotify_top$Streams) #mean = 6340219
 sdStreams <- sd(spotify_top$Streams)   #sd = 3369479
 ```
@@ -56,7 +57,7 @@ alpha = 0.05
 Step 3: Test statistic
 
 ```
-zStreams <- (meanStreams - 7000000)/(sdStreams/sqrt(200))
+zStreams <- (meanStreams - 7000000)/(sdStreams/sqrt(1556))
 ```
 
 Step 4: Finding P-value approach or Critical Value approach
