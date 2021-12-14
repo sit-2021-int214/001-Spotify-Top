@@ -1,6 +1,4 @@
-# Data Visualization
-
-## BI Tools
+# Data Visualization (BI Tools)
 
 ### Dashboard
 
