@@ -1,6 +1,6 @@
 # Data Visualization (BI Tools)
 
-### Dashboard
+### Dashboard [click](https://app.powerbi.com/groups/me/reports/f688f1f4-1a71-4d45-a053-7a2c09819b87/ReportSection?ctid=6f4432dc-20d2-441d-b1db-ac3380ba633d)
 
 ![img](https://github.com/sit-2021-int214/001-Spotify-Top/blob/main/bi-final-total.png)
 
