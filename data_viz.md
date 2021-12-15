@@ -2,7 +2,7 @@
 
 ### Dashboard [click](https://app.powerbi.com/groups/me/reports/f688f1f4-1a71-4d45-a053-7a2c09819b87/ReportSection?ctid=6f4432dc-20d2-441d-b1db-ac3380ba633d)
 
-![img](https://github.com/sit-2021-int214/001-Spotify-Top/blob/main/power-bi-final-ues-this.png)
+![img](https://github.com/sit-2021-int214/001-Spotify-Top/blob/main/bi-final-ref.png)
 
 ### จากการใช้ Bi tool ในการสำรวจข้อมูล ทำให้ทราบข้อมูลดังนี้
 
@@ -13,3 +13,5 @@
 5. จาก Artist Followers สามารถบอกได้ว่าใน spotify มีจำนวนผู้ติดตามทั้งหมด 22.74 พันล้านคน ซึ่งเป็นจำนวนจาก 200 อันดับแรกของปี 2020 และ 2021
 6. จากกราฟ Streams สามารถบอกได้ว่าใน spotify มีจำนวนการใช้บริการทั้งหมด 9.87 พันล้านครั้ง ซึ่งเป็นจำนวนจาก 200 อันดับแรกของปี 2020 และ 2021
 7. จากกราฟ Streams by Song Name จะบอกจำนวนการสตรีมของแต่ละเพลง ซึ่งเพลง Beggin' มีจำนวนการสตรีมมากที่สุด จึงเป็นเพลงที่ได้รับความนิยมมากที่สุด
+
+พวกเราได้เกิดข้อสงสัยกันว่าจำนวนครั้งที่สตรีมมีผลต่อการขึ้น Tops Chart หรือไม่ จึงได้ทำการ Analytical Inferential Statistics ด้วยวิธีการทำ [Hypothesis Testing](https://github.com/sit-2021-int214/001-Spotify-Top/blob/main/hypothesis_testing.md) 
