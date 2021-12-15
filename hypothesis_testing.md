@@ -44,8 +44,8 @@ sdStreams <- sd(spotify_top$Streams)   #sd = 3369479
 Step 1: State the hypothesis
 
 ```
-Ho:mue>7000000
-Ha:mue<=7000000
+Ho:mue>=7000000
+Ha:mue<7000000
 ```
 
 Step 2: Level of significance
@@ -88,5 +88,5 @@ if(zStreams<=zalphaStreams){
 
 Step 6: Conclusion
 ```
-เพลงที่จะขึ้น top 1-200 ของ charts ใน spotify จะต้องมีจำนวนการสตรีมเพลงน้อยกว่าหรือเท่ากับ 7000000
+เพลงที่จะขึ้น top 1-200 ของ charts ใน spotify จะต้องมีจำนวนการสตรีมเพลงน้อยกว่า 7000000 
 ```
